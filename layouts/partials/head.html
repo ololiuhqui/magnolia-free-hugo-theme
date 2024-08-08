@@ -1,0 +1,57 @@
+<head>
+  <title>{{.Page.Title}} {{.Site.Title}} {{.Site.Params.subtitle}}</title>
+  <meta charset="utf-8" />
+  <meta name="description" content="{{.Page.Params.params.metaDesc}}" />
+  <meta name="dc.relation" content="{{ .Site.BaseURL }}" />
+  {{if eq .Page.Layout "404"}}
+  <meta name="robots" content="noindex" />
+  {{else}}
+  <meta name="robots" content="index,follow" />
+  {{end}}
+
+  <!-- Google / Search Engine Tags -->
+  <meta
+    itemprop="name"
+    content="{{.Page.Title}} {{.Site.Title}} {{.Site.Params.subtitle}}"
+  />
+  <meta itemprop="description" content="{{.Page.Params.params.metaDesc}}" />
+  <meta itemprop="image" content="{{ "img/meta-image" | absURL}}" />
+
+  <!-- Facebook Meta Tags -->
+  <meta property="og:url" content="{{.Permalink}}" />
+  <meta property="og:type" content="website" />
+  <meta
+    property="og:title"
+    content="{{.Page.Title}} {{.Site.Title}} {{.Site.Params.subtitle}}"
+  />
+  <meta property="og:description" content="{{.Page.Params.params.metaDesc}}" />
+  <meta property="og:image" content="{{ "img/meta-image" | absURL}}" />
+
+  <!-- Twitter Meta Tags -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta
+    name="twitter:title"
+    content="{{.Page.Title}} {{.Site.Title}} {{.Site.Params.subtitle}}"
+  />
+  <meta name="twitter:description" content="{{.Page.Params.params.metaDesc}}" />
+  <meta name="twitter:image" content="{{ "img/meta-image" | absURL}}" />
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1, shrink-to-fit=no"
+  />
+  <meta name="theme-color" content="#1A94D2" />
+
+  {{ $options := (dict "targetPath" "css/styles.css" "outputStyle" "compressed")
+  }} {{ $style := resources.Get "/scss/main.scss" | toCSS $options | minify}}
+  <link rel="stylesheet" href="{{ $style.RelPermalink }}" media="screen" />
+
+  <!-- 
+        include a favicon for your site if you have it, else omit the line below 
+        Location of favicon can be in mytheme/static/favicon.ico
+    -->
+  <link rel="shortcut icon" type="image/x-icon" href="{{"img/favicon.ico" |
+  absURL}}" />
+  <!-- Google Analytics -->
+  {{ template "_internal/google_analytics_async.html" . }}
+</head>

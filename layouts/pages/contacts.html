@@ -1,0 +1,182 @@
+{{ define "main"}}
+
+<div class="mx-xl-5 px-xl-5">
+  <div class="text-center mt-5">
+    <h1 class="mb-4 display-2">{{.Site.Params.contacts.title}}</h1>
+  </div>
+
+  <div class="row justify-content-center">
+    <h5 class="text-center mb-2">
+      {{.Site.Params.contacts.formCallToAction }}
+    </h5>
+
+    <div class="col-lg-8 mb-3">
+      <div class="card mx-auto p-1 p-md-4 bg-light shadow-sm">
+        <div class="card-body bg-light">
+          <div class="container">
+            <form
+              id="contact-form"
+              role="form"
+              action="{{ .Site.Params.contacts.form.formspreeLink}}"
+              method="POST"
+            >
+              <div class="controls">
+                <div class="row">
+                  <div class="col-md-6">
+                    <div class="form-group">
+                      <label for="form_name"
+                        >{{.Site.Params.contacts.form.firstname}}</label
+                      >
+                      <input
+                        id="form_name"
+                        type="text"
+                        name="name"
+                        class="form-control"
+                        placeholder="{{.Site.Params.contacts.form.firstname}}"
+                        required="required"
+                        data-error="{{.Site.Params.contacts.form.firstname}}"
+                      />
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="form-group">
+                      <label for="form_lastname"
+                        >{{.Site.Params.contacts.form.lastname}}</label
+                      >
+                      <input
+                        id="form_lastname"
+                        type="text"
+                        name="surname"
+                        class="form-control"
+                        placeholder="{{.Site.Params.contacts.form.lastname}}"
+                        required="required"
+                        data-error="{{.Site.Params.contacts.form.lastname}}"
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-12">
+                    <div class="form-group">
+                      <label for="form_email"
+                        >{{.Site.Params.contacts.form.email}}</label
+                      >
+                      <input
+                        id="form_email"
+                        type="email"
+                        name="email"
+                        class="form-control"
+                        placeholder="{{.Site.Params.contacts.form.email}}"
+                        required="required"
+                        data-error="{{.Site.Params.contacts.form.email}}"
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-12">
+                    <div class="form-group">
+                      <label for="form_phone"
+                        >{{.Site.Params.contacts.form.phone}}</label
+                      >
+                      <input
+                        id="form_phone"
+                        type="tel"
+                        name="phone-number"
+                        class="form-control"
+                        placeholder="{{.Site.Params.contacts.form.phone}}"
+                        required="required"
+                        data-error="{{.Site.Params.contacts.form.phone}}"
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-12 mb-3">
+                    <div class="form-group">
+                      <label for="form_message"
+                        >{{.Site.Params.contacts.form.inquiry}}</label
+                      >
+                      <textarea
+                        id="form_message"
+                        name="inquiry"
+                        class="form-control"
+                        placeholder="{{.Site.Params.contacts.form.inquiry}}"
+                        rows="4"
+                        required="required"
+                        data-error="{{.Site.Params.contacts.form.inquiry}}"
+                      ></textarea>
+                    </div>
+                  </div>
+                  <div class="col-md-12 mb-3">
+                    <input
+                      type="checkbox"
+                      class="form-check-input"
+                      id="exampleCheck1"
+                    />
+                    <label class="form-check-label" for="exampleCheck1"
+                      >{{.Site.Params.contacts.form.checkbox}}</label
+                    >
+                  </div>
+
+                  <div class="col-md-12">
+                    <input
+                      type="submit"
+                      class="btn btn-primary btn-send pt-2 btn-block"
+                      value="{{.Site.Params.contacts.form.submitBtn}}"
+                    />
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end-form -->
+    {{ if .Site.Params.schedules.enabledContacts}}
+    <div class="col-lg-4 mb-3">
+      <div class="card h-100 p-4 shadow-sm">
+        <div class="card-body text-center d-flex align-items-around">
+          <div class="row">
+            <div class="col-12">
+              <i class="display-4 bi-clock text-muted"></i>
+              <h5 class="text-muted border-bottom border-3">
+                {{.Site.Params.schedules.title}}
+              </h5>
+            </div>
+            <div
+              class="col-12 d-flex flex-wrap justify-content-center flex-row d-lg-block"
+            >
+              {{range .Site.Params.schedules.days}} {{if . }}
+              <p class="mx-2 text-muted text-nowrap">{{.}}</p>
+              {{end}} {{end}}
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    {{end}}
+
+    <!-- /.row-->
+
+    <!-- /.row-->
+  </div>
+  <div class="row justify-content-center">
+    <div class="col-lg-8">
+      <p class="text-center text-muted mb-4">
+        {{.Site.Params.contacts.socialCallToAction}}
+      </p>
+    </div>
+  </div>
+  <div class="row justify-content-around">
+    {{ range .Site.Params.socials.link }}
+    <div class="col-4 mb-4 d-flex justify-content-center">
+      <a href="{{ .link }}">
+        <i class="display-2 bi-{{ .name }} "></i>
+      </a>
+    </div>
+    {{ end}}
+  </div>
+</div>
+{{ end }}

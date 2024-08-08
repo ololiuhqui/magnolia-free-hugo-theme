@@ -1,0 +1,43 @@
+{{ define "main" }}
+<!-- Service 1 - Bootstrap Brain Component -->
+<section class="py-5 py-xl-8">
+  <div class="container">
+    <div class="row justify-content-md-center">
+      <div class="col-12 col-md-10 col-lg-8 col-xl-7 col-xxl-6">
+        <h2 class="mb-4 display-5 text-center">
+          {{.Site.Params.services.title}}
+        </h2>
+        <p class="text-muted mb-5 text-justify">
+          {{.Site.Params.services.description}}
+        </p>
+        <hr class="w-50 mx-auto mb-5 mb-xl-9 border-dark-subtle" />
+      </div>
+    </div>
+  </div>
+  <div class="container overflow-hidden">
+    <div class="row gy-5 justify-content-center">
+      {{range $index, $element := .Site.Params.services.list}}
+      <div class="col-sm-12 col-md-6 col-xl-4">
+        <div class="text-center px-xl-2">
+          <i
+            class="bi bi-check-circle-fill text-primary mb-4"
+            style="font-size: 36px"
+          ></i>
+          <h5 class="m-2">{{.title}}</h5>
+          <p class="m-0 text-muted">{{.description}}</p>
+        </div>
+      </div>
+      {{end}}
+    </div>
+  </div>
+
+  <div class="d-grid gap-3 d-sm-flex justify-content-sm-center mt-5">
+    <!-- button -->
+    <!-- <a
+      class="btn btn-primary btn-lg mt-4 px-5 py-3 fs-6 fw-bolder shadow-sm"
+      href="{{absLangURL ""}}{{ .Site.Params.homepage.mainButtonRef }}"
+      >{{ .Site.Params.homepage.mainButton }}</a
+    > -->
+  </div>
+</section>
+{{ end}}

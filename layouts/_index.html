@@ -1,0 +1,56 @@
+{{- define "main" -}}
+
+<div class="row gx-5 gy-3 mb-2">
+  <div class="col-lg-4">
+    <!-- profile picture-->
+    <img
+      class="rounded profile-img img-fluid shadow"
+      src="profile.webp"
+      alt="Main image"
+    />
+  </div>
+
+  <div class="col-lg-8">
+    <div class="text-center text-lg-start">
+      <div class="badge mb-4"></div>
+      <div class="fs-3 fw-light text-muted">
+        {{ .Site.Params.homepage.preTitle }}
+      </div>
+      <h1 class="display-1 fw-bolder">
+        <span class="d-inline">{{ .Site.Params.homepage.title }} </span>
+      </h1>
+      <p class="text-justify text-lg-start">
+        {{ .Site.Params.homepage.intro | markdownify}}
+      </p>
+    </div>
+    <div
+      class="d-grid gap-3 d-sm-flex justify-content-sm-center justify-content-lg-start mt-3 mt-lg-5"
+    >
+      <!-- button -->
+      <a
+        class="btn btn-primary btn-lg px-5 py-3 fs-6 fw-bolder shadow-sm"
+        href="{{ .Site.Params.homepage.mainButtonRef }}"
+        >{{ .Site.Params.homepage.mainButton }}</a
+      >
+      <a
+        class="btn btn-secondary btn-lg px-5 py-3 fs-6 fw-bolder shadow-sm"
+        href="{{ .Site.Params.homepage.secondButtonRef }}"
+        >{{ .Site.Params.homepage.secondButton }}</a
+      >
+    </div>
+  </div>
+</div>
+<!-- Description -->
+{{ if .Site.Params.homepage.description.enabled}}
+<div class="row mt-5 align-items-center">
+  <h2 class="text-center">
+    {{ .Site.Params.homepage.description.secondTitle}}
+  </h2>
+  <p class="text-center">
+    {{ .Site.Params.homepage.description.paragraph | markdownify}}
+  </p>
+  <p class="text-center">
+    {{ .Site.Params.homepage.description.paragraph2 | markdownify}}
+  </p>
+</div>
+{{ end }} {{- end -}}
