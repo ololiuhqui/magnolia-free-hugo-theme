@@ -53,6 +53,7 @@ These are the currently customizable sections:
 ### 5. SEO ready
 
 - Every page has an easily customizable meta description and a unique meta title for better and easier indexing. The theme will use the image `static/img/meta-image` as meta image for Google, Facebook and Twitter.
+  There is a `robots.txt` file which indicates the correct location of the sitemap index for faster indexing.
 
 ### 6. Localized permalinks
 
