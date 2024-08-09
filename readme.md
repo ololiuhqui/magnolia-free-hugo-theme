@@ -15,9 +15,9 @@ Designing this theme and making it available for you took a lot of time and effo
 If you find yourself using this theme and you like it and pheraps you also [make money from it](https://opensource.org/license/MIT), consider remunerating my work and my time with a donation.
 You can choose your favorite way to support me.
 
-[<img src="./readme_images/bmc-brand-logo.svg">](https://buymeacoffee.com/ololiuhqui)
+[<img src=".readme_images/bmc-brand-logo.svg">](https://buymeacoffee.com/ololiuhqui)
 
-![Bitcoin](readme_images/bitcoin.svg)
+![Bitcoin](.readme_images/bitcoin.svg)
 
 **bc1q26f4gscc5ksujdx6wzxfnlqeqt02p3sjcqwvln**
 
