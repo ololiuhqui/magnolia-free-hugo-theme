@@ -2,4 +2,4 @@ User-agent: *
 {{ range .Site.Languages }}
 Disallow: /{{ . }}/404
 {{end}}
-Sitemap: https://ervakambo.com/sitemap.xml
+Sitemap: {{$.Site.BaseURL}}/sitemap.xml
