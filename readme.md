@@ -67,7 +67,8 @@ These are the currently customizable sections:
 1. Install hugo extended, follow [the official installation guide](https://gohugo.io/installation/).
 2. Create a new site: `hugo new site <sitename>`.
 3. Clone the theme repo as a submodule into your new site:`git init && git submodule add --depth=1 https://github.com/ololiuhqui/magnolia-free-hugo-theme themes/Magnolia`.
-4. Copy the content from "examplesite" to your site, from the root of your new website folder: `cp -rv themes/Magnolia/exampleSite/* ./`.
+4. Copy the content from "examplesite" to your site, from the root of your new website folder: `cp -rv themes/Magnolia/exampleSite/* ./`
+5. See the website preview with `hugo serve -D`
 
 ## How to update ♻
 
