@@ -14,11 +14,16 @@ Designing this theme and making it available for you took a lot of time and effo
 
 If you find yourself using this theme and you like it and pheraps you also [make money from it](https://opensource.org/license/MIT), consider remunerating my work and my time with a donation.
 You can choose your favorite way to support me.
-**BuyMeACoffee** :) #TODO
-**Crypto**
+
+[<img src="./readme_images/bmc-brand-logo.svg">](https://buymeacoffee.com/ololiuhqui)
+
+![Bitcoin](readme_images/bitcoin.svg)
+
+**bc1q26f4gscc5ksujdx6wzxfnlqeqt02p3sjcqwvln**
+
 It doesn't really cost anything to you but it would definitely motivate me to work more with Hugo and improve this theme, or working on other cool open source projects.
 
-Also please make sure to [**star this repo!**](#TODO)
+Also please make sure to [**star this repo!**](https://github.com/ololiuhqui/magnolia-free-hugo-theme)
 
 ## Features 🔎
 
@@ -59,8 +64,6 @@ These are the currently customizable sections:
 
 ////////////////// questions
 
-- how to modify site variables
-- how to modify page variables (like metadesc)
 - the 404 page is added manually to the public folder because github supports 404 only in the root of the folder (cannot do custom 404 for each language)
 - images have to be in .webp format
 - leave fields empty to remove stuff if not specified in another way
@@ -69,9 +72,14 @@ These are the currently customizable sections:
 
 ## How to install 📥
 
-1. Clone the theme repo as a submodule into your new site.
-2. Copy some folders from examplesite to your site. (content, config) #TODO
-3. Install required node modules with npm. #TODO
+1. Install hugo extended, follow [the official installation guide](https://gohugo.io/installation/).
+2. Create a new site: `hugo new site <sitename>`.
+3. Clone the theme repo as a submodule into your new site:`git init && git submodule add --depth=1 https://github.com/ololiuhqui/magnolia-free-hugo-theme themes/Magnolia`.
+4. Copy the content from "examplesite" to your site, from the root of your new website folder: `cp -rv themes/Magnolia/exampleSite/* ./`.
+
+## How to update ♻
+
+- From the root directory of your website run: `git submodule update --remote --merge`.
 
 ## How to customize 🎨
 
@@ -81,7 +89,7 @@ These are the currently customizable sections:
 
 - Change the pages metadescriptions in `content/<language>/<page>.html`. The `_index.html` in the root of every content language folder is the homepage, refer to [Content organization | Hugo](https://gohugo.io/content-management/organization/).
 
-- Change the images of the website from the `static` or `content` folders (some pages use [Page bundles](https://gohugo.io/content-management/page-bundles/)), please notice that the name of the images should be the same of the ones currently present in the exampleSite (that you cloned in step 2 of "how to install" guide).
+- Change the images of the website from the `static` or `content` folders (some pages use [Page bundles](https://gohugo.io/content-management/page-bundles/)), please notice that the name and the format of the images should be the same of the ones currently present in the exampleSite (that you cloned in step 2 of "how to install" guide).
 
 ## Add new languages 🚩
 
@@ -90,6 +98,10 @@ These are the currently customizable sections:
 3. Translate the variables values inside the `.toml` file accordingly to the language.
 4. In the `/content` directory, duplicate one of the language folders and change the name accordingly to your new language as in step 2.
 5. For each of the `.html` file in `/content`, you can change `title` and `slug` freely. `translationKey` should remain untouched.
+
+## Custom 404 page
+
+To add the custom 404 page designed for this theme, you will have to add it manually when building the site executing `hugo`.
 
 ## Contribute 🛠
 
