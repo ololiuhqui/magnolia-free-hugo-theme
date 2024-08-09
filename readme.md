@@ -62,14 +62,6 @@ These are the currently customizable sections:
 
 - Insert your Google Analytics tag in the `config.toml` file and be ready to track your site performances easily.
 
-////////////////// questions
-
-- the 404 page is added manually to the public folder because github supports 404 only in the root of the folder (cannot do custom 404 for each language)
-- images have to be in .webp format
-- leave fields empty to remove stuff if not specified in another way
-- how to add new languages?
-- use magnolia flower seller instead of the office?
-
 ## How to install 📥
 
 1. Install hugo extended, follow [the official installation guide](https://gohugo.io/installation/).
@@ -101,7 +93,7 @@ These are the currently customizable sections:
 
 ## Custom 404 page
 
-To add the custom 404 page designed for this theme, you will have to add it manually when building the site executing `hugo`.
+To add the custom 404 page and make it work on github pages or other hostings, you will have to add it manually when building the site executing `hugo`. This is because github pages looks for a 404 template in the root directory of the project, you can therefore only have one single 404 page for all the languages. To create a symlink to the english 404 version, which will then be used as default 404 once hosting, after running `hugo` run `ln -s public/en/404/index.html public/404.html`.
 
 ## Contribute 🛠
 
