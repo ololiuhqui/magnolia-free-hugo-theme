@@ -1,9 +1,0 @@
-User-agent: *
-
-Disallow: /en/404
-
-Disallow: /it/404
-
-Disallow: /sq/404
-
-Sitemap: https://ervakambo.com/sitemap.xml
