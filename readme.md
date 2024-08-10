@@ -59,7 +59,7 @@ These are the currently customizable sections:
 
 - Permalinks can be localized in each language (eg. you can have `/contacts` for english and `/contatti` for italian).
 
-### 6. Google Analytics supported
+### 7. Google Analytics supported
 
 - Insert your Google Analytics tag in the `config.toml` file and be ready to track your site performances easily.
 
@@ -69,7 +69,8 @@ These are the currently customizable sections:
 2. Create a new site: `hugo new site <sitename>`.
 3. Clone the theme repo as a submodule into your new site:`git init && git submodule add --depth=1 https://github.com/ololiuhqui/magnolia-free-hugo-theme themes/Magnolia`.
 4. Copy the content from "examplesite" to your site, from the root of your new website folder: `cp -rv themes/Magnolia/exampleSite/* ./`
-5. See the website preview with `hugo serve -D`
+5. Delete your default `config.toml` from the root folder of your site; the new configurations will be found in `config/_default`. The main configuration file is `config/_default/config.toml`, but most variables are overwritten or defined by the individual language configuration files (eg. `config/_default/languages/.en.toml`)
+6. See the website preview with `hugo serve -D`
 
 ## How to update ♻
 
@@ -81,7 +82,7 @@ These are the currently customizable sections:
 
 - Change the config files adding your own elements to the pages. You can change the page names there as well.
 
-- Change the pages metadescriptions in `content/<language>/<page>.html`. The `_index.html` in the root of every content language folder is the homepage, refer to [Content organization | Hugo](https://gohugo.io/content-management/organization/).
+- Change the pages names, slugs and metadescriptions in `content/<language>/<page>.html`. The `_index.html` in the root of every content language folder is the homepage, refer to [Content organization | Hugo](https://gohugo.io/content-management/organization/).
 
 - Change the images of the website from the `static` or `content` folders (some pages use [Page bundles](https://gohugo.io/content-management/page-bundles/)), please notice that the name and the format of the images should be the same of the ones currently present in the exampleSite (that you cloned in step 2 of "how to install" guide).
 
@@ -92,6 +93,7 @@ These are the currently customizable sections:
 3. Translate the variables values inside the `.toml` file accordingly to the language.
 4. In the `/content` directory, duplicate one of the language folders and change the name accordingly to your new language as in step 2.
 5. For each of the `.html` file in `/content`, you can change `title` and `slug` freely. `translationKey` should remain untouched.
+6. I strongly suggest you to update the SEO in the frontmatter as well in your new language.
 
 ## Custom 404 page
 
