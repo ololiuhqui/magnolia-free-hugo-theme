@@ -97,7 +97,7 @@ p {
 }
 
 .nav-item {
-  .nav-link {
+  .nav-menu {
     position: relative;
     text-transform: uppercase;
     color: tint-color($body-color, 15%);
@@ -122,12 +122,21 @@ p {
       transform-origin: left;
       transform: scaleX(1);
     }
+  }
+  .nav-trad {
+    position: relative;
+    text-transform: uppercase;
+    color: tint-color($body-color, 15%);
+    width: 160px;
 
-    &:not(:last-child) {
-      width: 160px;
-      i {
-        font-size: 15px;
-      }
+    &:hover {
+      color: $body-color;
+    }
+    i {
+      font-size: 15px;
+    }
+    &::after {
+      font-size: 25px;
     }
   }
 }

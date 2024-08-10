@@ -28,14 +28,14 @@
         >
           {{- range .Site.Menus.main }}
           <li class="nav-item">
-            <a class="nav-link text-nowrap" href="{{ .URL }}">{{.Name}}</a>
+            <a class="nav-link nav-menu text-nowrap" href="{{ .URL }}">{{.Name}}</a>
           </li>
           {{ end }}
           <li class="vr ms-1 d-none d-lg-block"></li>
           {{ if .Site.IsMultiLingual}}
           <li class="nav-item dropdown">
             <a
-              class="nav-link dropdown-toggle d-flex align-items-center justify-content-center"
+              class="nav-link nav-trad dropdown-toggle d-flex align-items-center justify-content-center"
               href="#"
               id="navbarDropdown"
               role="button"
@@ -45,7 +45,7 @@
             >
               <i class="bi bi-globe me-1"></i>
               {{.Site.Language.LanguageName}}
-              <i class="bi bi-caret-down-fill ms-1"></i>
+              <!-- <i class="bi bi-caret-down-fill ms-1"></i> -->
             </a>
 
             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -53,7 +53,7 @@
               
               {{ range .Translations }}
               
-              <a class="dropdown-item nav-link text-center" href="{{.Permalink}}">
+              <a class="dropdown-item nav-item nav-link nav-trad text-center" href="{{.Permalink}}">
                 {{.Site.Language.LanguageName}}
               </a>
               {{end}}
