@@ -21,7 +21,7 @@ contentDir = "content/en"
     Look at what this theme is capable to do on the features page, and see a beautiful contacts page example.
         """
     mainButton = "Features"
-    mainButtonRef = "services" # Just write the name of the page here
+    mainButtonRef = "features" # Just write the name or slug of the page here
     secondButton = "Contacts"
     secondButtonRef = "contacts" # Just write the name of the pages here
     [params.homepage.description]

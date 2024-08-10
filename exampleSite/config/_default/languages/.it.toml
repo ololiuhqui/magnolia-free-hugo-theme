@@ -21,7 +21,7 @@ contentDir = "content/it"
     Guardate cosa è in grado di fare questo tema nella pagina delle caratteristiche e vedete un bellissimo esempio di pagina dei contatti.
         """
     mainButton = "Caratteristiche"
-    mainButtonRef = "caratteristiche" # Just write the name of the page here
+    mainButtonRef = "caratteristiche" # Just write the name or slug of the page here
     secondButton = "Contatti"
     secondButtonRef = "contatti" # Just write the name of the pages here
     [params.homepage.description]
