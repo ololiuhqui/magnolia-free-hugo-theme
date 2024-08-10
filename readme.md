@@ -101,10 +101,6 @@ To add the custom 404 page and make it work on github pages or other hostings, y
 
 ## Contribute 🛠
 
-### Known issues:
-
-- A better styling of the language dropdown menù is needed.
-
 ### To add:
 
 #### Add a blog functionality
