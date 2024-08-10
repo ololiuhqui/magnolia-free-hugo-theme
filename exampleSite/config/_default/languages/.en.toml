@@ -28,18 +28,24 @@ contentDir = "content/en"
     enabled = true
     secondTitle = "How to use this theme"
     paragraph = """#### Install 📥
-- Clone the theme repo as a submodule into your new site. #TODO
+- Install hugo extended, follow [the official installation guide](https://gohugo.io/installation/).
 
-- Copy some folders from examplesite to your site (content, config). #TODO
+- Create a new site: `hugo new site <sitename>`
 
-- Install required node modules with npm. #TODO
+- Clone the theme repo as a submodule into your new site:`git init && git submodule add --depth=1 https://github.com/ololiuhqui/magnolia-free-hugo-theme themes/Magnolia`
+
+- Copy the content from "examplesite" to your site, from the root of your new website folder: `cp -rv themes/Magnolia/exampleSite/* ./`
+
+- Delete your default `config.toml` from the root folder of your site; the new configurations will be found in `config/_default`. The main configuration file is `config/_default/config.toml`, but most variables are overwritten or defined by the individual language configuration files (eg. `config/_default/languages/.en.toml`).
+
+- See the website preview with `hugo serve -D`
 
 #### Customize 🎨
 - Use your preferred color palette by modifying the Bootstrap variables in `assets/scss/custom-variables.scss`.
 
 - Change the config files adding your own elements to the pages. You can change the page names there as well.
 
-- Change the pages metadescriptions in `content/<language>/<page>.html`. The `_index.html` in the root of every content language folder is the homepage, refer to [Content organization](https://gohugo.io/content-management/organization/).
+- Change the pages names, slugs and metadescriptions in `content/<language>/<page>.html`. The `_index.html` in the root of every content language folder is the homepage, refer to [Content organization](https://gohugo.io/content-management/organization/).
 
 - Change the images of the website from the `static` or `content` folders (some pages use [Page bundles](https://gohugo.io/content-management/page-bundles/)), please notice that the name of the images should be the same of the ones currently present in the exampleSite
 
@@ -52,9 +58,13 @@ contentDir = "content/en"
 - For each of the `.html` file in `/content`, you can change `title` and `slug` freely. `translationKey` should remain untouched.
 - I strongly suggest you to update the SEO in the frontmatter as well in your new language.
 
-**Please refer to [themepage]()/github for more details #TODO.**
+#### Custom 404 page
+
+To add the custom 404 page and make it work on github pages or other hostings, you will have to add it manually when building the site executing `hugo`. This is because github pages looks for a 404 template in the root directory of the project, you can therefore only have one single 404 page for all the languages. To create a symlink to the english 404 version, which will then be used as default 404 once hosting, after running `hugo` run `ln -s public/en/404/index.html public/404.html`.
+
+**Please refer to [themepage]()/[github](https://github.com/ololiuhqui/magnolia-free-hugo-theme) for more details #TODO.**
         """
-    paragraph2= "" #You can use bootstrap to define your first paragraph look, but in case this isn't enough, here there's a secoind paragraph
+    paragraph2= "" #You can use markdown to define your first paragraph look, but in case this isn't enough, here there's a secoind paragraph
 
 
 [params.office]
@@ -80,7 +90,7 @@ contentDir = "content/en"
 [params.services]
   title = "Features"
   description = """ I built this theme with simplicity in mind, it is small and easily customizable, responsive, modular and multilingual. But it also leaves some space to further in-depth customization since it uses Bootstrap and SCSS.
-  This page also shows an example on how menù page names can be changed, the link will hold the /services relative permalink and use the services.html layout, but the page will be called \"Features\", if you want to change the link as well you need to edit the `content/services.html` file."""
+  This page also shows an example of how you can change the site`s page names: The site will use the `services.html` layout for this page, but the page will be called "Features" and the link will use the related permalink `/features`."""
   [params.services.list]
     # You can add as much params.services.list.<N> as you like
     [params.services.list.0]
@@ -124,7 +134,7 @@ contentDir = "content/en"
       # You can add other socials here by copypasting the above section and
       # selecting the right name for the icon from here https://icons.getbootstrap.com/
 
-[params.schedules]
+[params.schedules] # Time schedules (eg. your office openming hours)
   enabledFooter = false # This will add the schedules on the footer too
   enabledContacts = true # This will add the schedule to the contact page
   title = "Office hours" # For contacts page only
@@ -145,7 +155,7 @@ contentDir = "content/en"
   [params.footer.navigate]
   heading = "Navigate"   
   [params.footer.contacts]
-  enabled = true # enables/disables the whole contacts section
+  enabled = true # enables/disables the whole contacts section in footer
   heading = "Contact"
   address = "Scranton 2865 Pouros Corners 55441-0788"
   mail = "dundermifflin@fakemail.com"
@@ -156,7 +166,7 @@ contentDir = "content/en"
   title = "404, page not found" # text for 404 page
 
 [menus]
-# PageRef should refer to the "translationKey" in content frontmatter, name can be changed freely
+# PageRef should refer to the "translationKey" in `/content/<page>` frontmatter, names can be changed freely
   [[menus.main]]
   name = "Home"
   pageRef = "/"
