@@ -6,28 +6,13 @@ I decided to give my personal _thank you_ to the Hugo developers and community b
 
 I strongly value the open source community as in these years i've been using many open source projects that made my life better and improved my digital freedom in many ways.
 
-Freedom makes us better humans, and makes us improve our status faster and easier.
-
-## Remunerate my time and energy 💫
-
-Designing this theme and making it available for you took a lot of time and effort.
-
-If you find yourself using this theme and you like it and pheraps you also [make money from it](https://opensource.org/license/MIT), consider remunerating my work and my time with a donation.
-You can choose your favorite way to support me.
-
-[<img src=".readme_images/bmc-brand-logo.svg">](https://buymeacoffee.com/ololiuhqui)
-
-![Bitcoin](.readme_images/bitcoin.svg)
-
-**bc1q26f4gscc5ksujdx6wzxfnlqeqt02p3sjcqwvln**
-
-It doesn't really cost anything to you but it would definitely motivate me to work more with Hugo and improve this theme, or working on other cool open source projects.
-
-Also please make sure to [**star this repo!**](https://github.com/ololiuhqui/magnolia-free-hugo-theme)
+Freedom makes us better humans, and makes us improve our status faster and in an easier way.
 
 ## Features 🔎
 
 I built this theme with simplicity in mind, it is small and easily customizable, responsive, modular and multilingual. But it also leaves some space to further in-depth customization since it uses **Bootstrap** and **SCSS**.
+
+This theme is thought to be used as a personal / business theme, it can provide a great landing page for your activity!
 
 ### 1. Responsive
 
@@ -98,6 +83,23 @@ These are the currently customizable sections:
 ## Custom 404 page
 
 To add the custom 404 page and make it work on github pages or other hostings, you will have to add it manually when building the site executing `hugo`. This is because github pages looks for a 404 template in the root directory of the project, you can therefore only have one single 404 page for all the languages. To create a symlink to the english 404 version, which will then be used as default 404 once hosting, after running `hugo` run `ln -s public/en/404/index.html public/404.html`.
+
+## Remunerate my time and energy 💫
+
+Designing this theme and making it available for you took a lot of time and effort.
+
+If you find yourself using this theme and you like it and pheraps you also [make money from it](https://opensource.org/license/MIT), consider remunerating my work and my time with a donation.
+You can choose your favorite way to support me.
+
+[<img src="raw.githubusercontent.com/ololiuhqui/magnolia-free-hugo-theme/tree/main/.readme_images/bmc-brand-logo.svg">](https://buymeacoffee.com/ololiuhqui)
+
+![Bitcoin](raw.githubusercontent.com/ololiuhqui/magnolia-free-hugo-theme/tree/main/.readme_images/bitcoin.svg)
+
+**bc1q26f4gscc5ksujdx6wzxfnlqeqt02p3sjcqwvln**
+
+It doesn't really cost you anything but it would definitely motivate me to work more with Hugo and improve this theme, or working on other cool open source projects.
+
+Also please make sure to [**star this repo!**](https://github.com/ololiuhqui/magnolia-free-hugo-theme)
 
 ## Contribute 🛠
 
