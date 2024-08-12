@@ -1,4 +1,4 @@
-# Hugo Magnolia Theme
+# Hugo Magnolia Theme 🌸
 
 **A simple, completely customizable, multilingual Hugo theme thought for professionals and small businesses.**
 
@@ -8,7 +8,7 @@ I strongly value the open source community as in these years i've been using man
 
 Freedom makes us better humans, and makes us improve our status faster and in an easier way.
 
-## Features 🔎
+## Features ⚡
 
 I built this theme with simplicity in mind, it is small and easily customizable, responsive, modular and multilingual. But it also leaves some space to further in-depth customization since it uses **Bootstrap** and **SCSS**.
 
@@ -24,7 +24,7 @@ This theme is thought to be used as a personal / business theme, it can provide 
 
 ### 3. Multilingual
 
-- The default content language is english (it can be changed), but you can add as many languages as you want very easily, the theme includes an italian language example and a dropdown menù for easily switching between languages.
+- The default content language is english (it can be changed), but you can add as many languages as you want very easily, the theme includes an italian language example and a dropdown menù for easily switching between languages. Permalinks can be localized in each language (eg. you can have `/contacts` for english and `/contatti` for italian).
 
 ### 4. Customizable
 
@@ -40,15 +40,11 @@ These are the currently customizable sections:
 - Every page has an easily customizable meta description and a unique meta title for better and easier indexing. The theme will use the image `static/img/meta-image` as meta image for Google, Facebook and Twitter.
   There is a `robots.txt` file which indicates the correct location of the sitemap index for faster indexing.
 
-### 6. Localized permalinks
-
-- Permalinks can be localized in each language (eg. you can have `/contacts` for english and `/contatti` for italian).
-
-### 7. Google Analytics supported
+### 6. Google Analytics supported
 
 - Insert your Google Analytics tag in the `config.toml` file and be ready to track your site performances easily.
 
-## How to install 📥
+## Quick start: how to install 📥
 
 1. Install hugo extended, follow [the official installation guide](https://gohugo.io/installation/).
 2. Create a new site: `hugo new site <sitename>`.
@@ -91,9 +87,9 @@ Designing this theme and making it available for you took a lot of time and effo
 If you find yourself using this theme and you like it and pheraps you also [make money from it](https://opensource.org/license/MIT), consider remunerating my work and my time with a donation.
 You can choose your favorite way to support me.
 
-[<img src="raw.githubusercontent.com/ololiuhqui/magnolia-free-hugo-theme/tree/main/.readme_images/bmc-brand-logo.svg">](https://buymeacoffee.com/ololiuhqui)
+[<img src="https://raw.githubusercontent.com/ololiuhqui/magnolia-free-hugo-theme/tree/main/.readme_images/bmc-brand-logo.svg">](https://buymeacoffee.com/ololiuhqui)
 
-![Bitcoin](raw.githubusercontent.com/ololiuhqui/magnolia-free-hugo-theme/tree/main/.readme_images/bitcoin.svg)
+![Bitcoin](https://raw.githubusercontent.com/ololiuhqui/magnolia-free-hugo-theme/tree/main/.readme_images/bitcoin.svg)
 
 **bc1q26f4gscc5ksujdx6wzxfnlqeqt02p3sjcqwvln**
 
