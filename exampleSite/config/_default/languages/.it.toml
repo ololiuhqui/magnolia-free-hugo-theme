@@ -101,7 +101,7 @@ Per aggiungere la pagina 404 personalizzata e farla funzionare su github pages, 
       description= "Nascondi e mostra alcuni elementi facilmente dal file di configurazione"
     [params.services.list.02]
       title = "Multilingual"
-      description= "La lingua predefinita dei contenuti è l'inglese (modificabile), ma è possibile aggiungere tutte le lingue desiderate in modo molto semplice; il tema include un esempio di lingua italiana e un menu a tendina per passare facilmente da una lingua all'altra."
+      description= "a lingua predefinita dei contenuti è l'inglese (può essere cambiata), ma è possibile aggiungere tutte le lingue che si desidera in modo molto semplice; il tema include un esempio di lingua italiana e un menu a tendina per passare facilmente da una lingua all'altra. I permalink possono essere localizzati in ogni lingua (ad esempio, si può avere `/contatti` per l'inglese e `/contatti` per l'italiano)."
     [params.services.list.03]
       title = "Personalizzabile"
       description= "Il contenuto della pagina può essere personalizzato all'interno dei file di configurazione. Alcune variabili possono essere cambiate dai file SCSS."
@@ -112,8 +112,8 @@ Per aggiungere la pagina 404 personalizzata e farla funzionare su github pages, 
       title = "Google Analytics integrato"
       description= "Inserite il vostro tag Google Analytics nel file `config.toml` e sarete pronti a monitorare facilmente le prestazioni del vostro sito."
     [params.services.list.06]
-      title = "Permalinks Localizzati"
-      description= "I permalink possono essere localizzati in ogni lingua (ad esempio, si può avere `/contacts` per l'inglese e `/contatti` per l'italiano)."
+      title = "Google Maps Incluso"
+      description= "La pagina dei contatti può essere facilmente personalizzata con l'aggiunta di un link a Google Maps per ottenere indicazioni stradali verso la sede dell'attività."
 
 
   

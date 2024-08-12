@@ -101,7 +101,7 @@ To add the custom 404 page and make it work on github pages or other hostings, y
       description= "Hide and show some elements easily from the config file."
     [params.services.list.02]
       title = "Multilingual"
-      description= "The default content language is english (it can be changed), but you can add as many languages as you want very easily, the theme includes an italian language example and a dropdown menù for easily switching between languages."
+      description= "The default content language is english (it can be changed), but you can add as many languages as you want very easily, the theme includes an italian language example and a dropdown menù for easily switching between languages. Permalinks can be localized in each language (eg. you can have `/contacts` for english and `/contatti` for italian)."
     [params.services.list.03]
       title = "Customizable"
       description= "The page content can be customized from within the config files."
@@ -112,8 +112,8 @@ To add the custom 404 page and make it work on github pages or other hostings, y
       title = "Google Analytics supported"
       description= "Insert your Google Analytics tag in the `config.toml` file and be ready to track your site performances easily."
     [params.services.list.06]
-      title = "Localized Permalinks"
-      description= "Permalinks can be localized in each language (eg. you can have `/contacts` for english and `/contatti` for italian)."
+      title = "Google Maps Included"
+      description= "The contact page can be easily customized by adding a google maps link to get directions towards your activity location."
 
 
   
