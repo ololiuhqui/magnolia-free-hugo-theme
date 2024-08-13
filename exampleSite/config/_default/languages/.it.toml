@@ -17,8 +17,16 @@ contentDir = "content/it"
     preTitle = 'Free Hugo theme'
     title = "Magnolia"
     # You can use some markdown safely here as long as you don't include line breaks
-    intro= """La libertà ci rende esseri umani migliori e ci fa migliorare più velocemente il nostro status collettivo.
-    Guardate cosa è in grado di fare questo tema nella pagina delle caratteristiche e vedete un bellissimo esempio di pagina dei contatti.
+    intro= """
+*"La libertà ci rende esseri umani migliori e ci fa migliorare più velocemente il nostro status di razza collettiva "*.
+
+**Un tema Hugo semplice, completamente personalizzabile e multilingue pensato per i professionisti e le piccole imprese **.
+
+Ho costruito questo tema pensando alla semplicità, è piccolo e facilmente **personalizzabile, reattivo, modulare e multilingua**. Ma lascia anche spazio a una personalizzazione più approfondita, poiché utilizza **Bootstrap** e **SCSS**.
+
+Qui c'è la [pagina github del tema](https://github.com/ololiuhqui/magnolia-free-hugo-theme), a cui si dovrebbe fare riferimento se si cercano ulteriori dettagli, ricordati di lasciare una stellina al repo!
+
+Guardate cosa è in grado di fare questo tema nella pagina delle caratteristiche e vedete un bellissimo esempio di pagina dei contatti qui sotto.
         """
     mainButton = "Caratteristiche"
     mainButtonRef = "caratteristiche" # Just write the name or slug of the page here

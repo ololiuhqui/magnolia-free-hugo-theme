@@ -17,8 +17,16 @@ contentDir = "content/en"
     preTitle = 'Free Hugo theme'
     title = "Magnolia"
     # You can use some markdown safely here as long as you don't include line breaks
-    intro= """Freedom makes us better humans, and makes us improve our status as a collective race faster.
-    Look at what this theme is capable to do on the features page, and see a beautiful contacts page example.
+    intro= """
+*"Freedom makes us better humans, and makes us improve our status as a collective race faster."*
+
+**A simple, completely customizable, multilingual Hugo theme thought for professionals and small businesses.**
+
+I built this theme with simplicity in mind, it is small and easily **customizable, responsive, modular and multilingual**. But it also leaves some space to further in-depth customization since it uses **Bootstrap** and **SCSS**.
+
+Here there's the [theme github page](https://github.com/ololiuhqui/magnolia-free-hugo-theme), to which you should refer if you seek for more details, make sure to star the repo!
+
+Look at what this theme is capable to do on the features page, and see a beautiful contacts page example below.
         """
     mainButton = "Features"
     mainButtonRef = "features" # Just write the name or slug of the page here
