@@ -131,8 +131,8 @@ To add the custom 404 page and make it work on github pages or other hostings, y
   enabled = true # enables/disables the whole social section in the footer
   callToAction= "Get connected with us on social networks >"
       [[params.socials.link]]
-        name = "instagram"
-        link = ""
+        name = "github"
+        link = "https://github.com/ololiuhqui/magnolia-free-hugo-theme"
       [[params.socials.link]]
         name = "linkedin"
         link = ""
