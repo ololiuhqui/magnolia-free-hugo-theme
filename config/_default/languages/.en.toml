@@ -18,7 +18,7 @@ contentDir = "content/en"
     title = "Magnolia"
     # You can use some markdown safely here as long as you don't include line breaks
     intro= """
-*"Freedom makes us better humans, and makes us improve our status as a collective race faster."*
+### "Freedom makes us better humans, and makes us improve our status as a collective race faster."
 
 **A simple, completely customizable, multilingual Hugo theme thought for professionals and small businesses.**
 
