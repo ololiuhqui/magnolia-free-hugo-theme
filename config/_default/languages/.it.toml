@@ -19,6 +19,7 @@ contentDir = "content/it"
     # You can use some markdown safely here as long as you don't include line breaks
     intro= """
 ### "La libertà ci rende esseri umani migliori e ci fa migliorare più velocemente il nostro status di razza collettiva ".
+___
 
 **Un tema Hugo semplice, completamente personalizzabile e multilingue pensato per i professionisti e le piccole imprese **.
 
