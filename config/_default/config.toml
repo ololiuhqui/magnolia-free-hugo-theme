@@ -1,0 +1,16 @@
+baseURL = 'https://example.com'
+languageCode = ''
+title = 'Magnolia Default' # This can get overwritten by the single language files
+defaultContentLanguage = 'en'
+defaultContentLanguageInSubDir = true
+enableRobotsTXT = true
+disableKinds = ["taxonomy", "term"] # This disables categories and tags and removes them from sitemap as they are not used
+theme = "Magnolia"
+
+[module]
+    [[module.mounts]]
+      source = "node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"
+      target = "assets/js/bootstrap.bundle.min.js"
+      [[module.mounts]]
+      source = 'assets'
+      target = 'assets'
