@@ -1,5 +1,0 @@
-User-agent: *
-{{ range .Site.Languages }}
-Disallow: /{{ . }}/404
-{{end}}
-Sitemap: {{$.Site.BaseURL}}/sitemap.xml
