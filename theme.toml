@@ -1,0 +1,30 @@
+name = "Magnolia "
+license = "MIT"
+licenselink = "https://github.com/ololiuhqui/magnolia-free-hugo-theme/blob/main/LICENSE.md"
+description = "A simple, completely customizable, multilingual Hugo theme thought for professionals and small businesses."
+
+# The home page of the theme, where the source can be found.
+homepage = "https://github.com/ololiuhqui/magnolia-free-hugo-theme"
+
+# If you have a running demo of the theme.
+demosite = "https://ololiuhqui.github.io/magnolia-free-hugo-theme/en/"
+
+tags = ["personal", "company", "multilingual", "light", "Landing", "Bootstrap"]
+features = ["Responsive", "Modular", "Customizable", "SEO ready", "Google Analytics supported"]
+
+# # If the theme has multiple authors
+# authors = [
+#   {name = "Name of author", homepage = "Website of author"},
+#   {name = "Name of author", homepage = "Website of author"}
+# ]
+
+# If the theme has a single author
+[author]
+    name = "Ludovico Caluori"
+    homepage = "https://github.com/ololiuhqui"
+
+# If porting an existing theme
+# [original]
+#     author = "Name of original author"
+#     homepage = "Link to website of original author"
+#     repo = "Link to source code of original theme"
