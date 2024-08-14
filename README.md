@@ -1,4 +1,4 @@
-# Hugo Magnolia Theme 🌸
+# Hugo Magnolia Theme 🌸 | [DEMO](https://ololiuhqui.github.io/magnolia-free-hugo-theme/en/)
 
 **A simple, completely customizable, multilingual Hugo theme thought for professionals and small businesses.**
 
