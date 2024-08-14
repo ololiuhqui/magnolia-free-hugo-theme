@@ -1,0 +1,3 @@
+[submodule "themes/Magnolia"]
+	path = themes/Magnolia
+	url = https://github.com/ololiuhqui/magnolia-free-hugo-theme
