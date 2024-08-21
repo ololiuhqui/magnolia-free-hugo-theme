@@ -4,7 +4,7 @@
 <div style="text-align: center">
 
 [![GitHub Actions Workflow Status](https://img.shields.io/github/actions/workflow/status/ololiuhqui/magnolia-free-hugo-theme/hugo.yaml?logo=hugo)](https://github.com/ololiuhqui/magnolia-free-hugo-theme/actions/workflows/hugo.yaml)
-[![Minimum Hugo Version](https://img.shields.io/static/v1?label=min-HUGO-version&message=>=v0.112.4&color=blue&logo=hugo)](https://github.com/gohugoio/hugo/releases/tag/v0.112.4)
+[![Minimum Hugo Version](https://img.shields.io/static/v1?label=min-HUGO-version&message=>=v0.111.3&color=blue&logo=hugo)](https://github.com/gohugoio/hugo/releases/tag/v0.111.3)
 
 ![GitHub Repo stars](https://img.shields.io/github/stars/ololiuhqui/magnolia-free-hugo-theme)
 ![Liberapay receiving](https://img.shields.io/liberapay/receives/ololiuhqui)
@@ -138,7 +138,31 @@ Or GitHub sponsors
 
 ## Contribute 🛠
 
-### To add:
+### Notes on how this repo works
+
+**main** is the main branch, **exampleSite** is in another [git worktree](https://www.gitkraken.com/learn/git/git-worktree) which only includes the **exampleSite** branch . The **exampleSite** branch of course uses the _Magnolia theme_, simply added as a submodule on it.
+
+So while the _exampleSite_ directory will be shown in **main**, every change in the _exampleSite_ directory will be considered a change in the **exampleSite worktree 🌲**.
+
+To clarify the difference between branches and worktrees list all worktrees from the root of the theme by running `git worktree list`
+
+> **output:** <br>
+> dc079af [main] <br>
+> 41ac063 [exampleSite]
+
+And see the different outcomes if you run `git status` in the different directories:
+
+> **output (if run from theme root):** <br>
+> On branch main
+
+If you clone this repo you will have **2** different worktrees:
+
+| main 🌲     | exampleSite 🌲            |
+| ----------- | ------------------------- |
+| main branch | exampleSite branch        |
+|             | theme as submodule (main) |
+
+### To add
 
 #### Add a blog functionality
 
