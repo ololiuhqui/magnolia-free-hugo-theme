@@ -141,9 +141,12 @@ Or GitHub sponsors
 
 ### Notes on how this repo works
 
-**main** is the main branch, **exampleSite** is in another [git worktree](https://www.gitkraken.com/learn/git/git-worktree) which only includes the **exampleSite** branch . The **exampleSite** branch of course uses the _Magnolia theme_, simply added as a submodule on it.
+**main** is the main branch, **exampleSite** is another [git worktree](https://www.gitkraken.com/learn/git/git-worktree) which only includes the **exampleSite** branch . The **exampleSite** branch of course uses the _Magnolia theme_, simply added as a submodule on it.
 
-So while the _exampleSite_ directory will be shown in **main**, every change in the _exampleSite_ directory will be considered a change in the **exampleSite worktree 🌲**.
+This is why "exampleSite/" is in `.gitignore` and how they can be two different branches of the same repo,
+
+So the _exampleSite_ directory will _not_ be shown in **main**, every change in the _exampleSite_ directory will be considered a change in the **exampleSite worktree 🌲**.
+If you clone the **main** branch you will therefore be able to modify the theme and its content only, if you clone the **exampleSite** branch you will be able to modify the exampleSite content only, as an alternative you can also clone the **exampleSite** with the `recurse-submodules` option, that will also add the theme (main) content submodule.
 
 To clarify the difference between branches and worktrees list all worktrees from the root of the theme by running `git worktree list`
 
