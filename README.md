@@ -141,35 +141,20 @@ Or GitHub sponsors
 
 ### Notes on how this repo works
 
-**main** is the main branch, **exampleSite** is another [git worktree](https://www.gitkraken.com/learn/git/git-worktree) which only includes the **exampleSite** branch . The **exampleSite** branch of course uses the _Magnolia theme_, simply added as a submodule on it.
+This repo includes two main branches: **main** and **exampleSite**.
 
-This is why "exampleSite/" is in `.gitignore` and how they can be two different branches of the same repo,
+The _exampleSite_ directory will _not_ be shown in **main** branch.
+If you clone the **main** branch you will therefore be able to modify the theme and its content only, if you clone the **exampleSite** branch you will be able to modify the exampleSite content only.
+As an alternative you can also clone the **exampleSite** with the `recurse-submodules` option, that will also add the theme **main** as submodule, making it available for changes.
 
-So the _exampleSite_ directory will _not_ be shown in **main**, every change in the _exampleSite_ directory will be considered a change in the **exampleSite worktree 🌲**.
-If you clone the **main** branch you will therefore be able to modify the theme and its content only, if you clone the **exampleSite** branch you will be able to modify the exampleSite content only, as an alternative you can also clone the **exampleSite** with the `recurse-submodules` option, that will also add the theme (main) content submodule.
-
-To clarify the difference between branches and worktrees list all worktrees from the root of the theme by running `git worktree list`
-
-> **output:** <br>
-> dc079af [main] <br>
-> 41ac063 [exampleSite]
-
-And see the different outcomes if you run `git status` in the different directories:
-
-> **output (if run from theme root):** <br>
-> On branch main
-
-> **output (if run from exampleSite directory):** <br>
-> On branch exampleSite
-
-If you clone this repo you will have **2** different worktrees:
+#### Content:
 
 | main 🌲     | exampleSite 🌲            |
 | ----------- | ------------------------- |
 | main branch | exampleSite branch        |
 |             | theme as submodule (main) |
 
-### Things to add to this theme
+### Things that should be probably added to this theme
 
 #### Add a blog functionality
 
