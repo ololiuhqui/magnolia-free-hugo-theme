@@ -1,4 +1,18 @@
-# Hugo Magnolia Theme 🌸 | [DEMO](https://ololiuhqui.github.io/magnolia-free-hugo-theme/en/)
+<h1 align=center>Hugo Magnolia 🌸 | <a href="https://ololiuhqui.github.io/magnolia-free-hugo-theme/en/" rel="nofollow">Demo</a></h1>
+
+<br>
+<div style="text-align: center">
+
+[![GitHub Actions Workflow Status](https://img.shields.io/github/actions/workflow/status/ololiuhqui/magnolia-free-hugo-theme/hugo.yaml?logo=hugo)](https://github.com/ololiuhqui/magnolia-free-hugo-theme/actions/workflows/hugo.yaml)
+[![Minimum Hugo Version](https://img.shields.io/static/v1?label=min-HUGO-version&message=>=v0.112.4&color=blue&logo=hugo)](https://github.com/gohugoio/hugo/releases/tag/v0.112.4)
+
+![GitHub Repo stars](https://img.shields.io/github/stars/ololiuhqui/magnolia-free-hugo-theme)
+![Liberapay receiving](https://img.shields.io/liberapay/receives/ololiuhqui)
+![GitHub Sponsors](https://img.shields.io/github/sponsors/ololiuhqui)
+
+</div>
+
+<br>
 
 **A simple, completely customizable, multilingual Hugo theme thought for professionals and small businesses.**
 
@@ -7,6 +21,8 @@ I decided to give my personal _thank you_ to the Hugo developers and community b
 I strongly value the open source community as in these years i've been using many open source projects that made my life better and improved my digital freedom in many ways.
 
 Freedom makes us better humans, and makes us improve our status faster and in an easier way.
+
+**Make sure to <a href="https://github.com/ololiuhqui/magnolia-free-hugo-theme"> star this repo!</a>**
 
 ## Features ⚡
 
@@ -88,18 +104,37 @@ To add the custom 404 page and make it work on github pages or other hostings, y
 
 Designing this theme and making it available for you took a lot of time and effort.
 
-If you find yourself using this theme and you like it and pheraps you also [make money from it](https://opensource.org/license/MIT), consider remunerating my work and my time with a donation.
-You can choose your favorite way to support me.
+The MIT license means that you are completely free to do whatevere you want with this theme, even [make money from it!](https://opensource.org/license/MIT)
 
-[<img src="https://raw.githubusercontent.com/ololiuhqui/magnolia-free-hugo-theme/main/images/.readme_images/bmc-brand-logo.svg">](https://buymeacoffee.com/ololiuhqui)
+If you wish you can support me in several ways:
 
-![Bitcoin](https://raw.githubusercontent.com/ololiuhqui/magnolia-free-hugo-theme/main/images/.readme_images/bitcoin.svg)
+### Single donation:
 
-**bc1q26f4gscc5ksujdx6wzxfnlqeqt02p3sjcqwvln**
+<details><summary><b> BuyMeACoffee </b></summary>
 
-It doesn't really cost you anything but it would definitely motivate me to work more with Hugo and improve this theme, or working on other cool open source projects.
+<a href="https://www.buymeacoffee.com/ololiuhqui" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" style="height: auto ;width: 150px;" ></a>
 
-Also please make sure to [**star this repo!**](https://github.com/ololiuhqui/magnolia-free-hugo-theme)
+</details>
+<br>
+<details><summary><b> Bitcoin (BTC) </b></summary>
+
+```
+bc1q2drx3x5pfl0c68urwztvjrwgksg9u3l7mn4g4m
+```
+
+![btc-bc1q26f4gscc5ksujdx6wzxfnlqeqt02p3sjcqwvln](https://raw.githubusercontent.com/ololiuhqui/magnolia-free-hugo-theme/main/images/.readme_images/bitcoin-qr.png)
+
+</details>
+
+### Recurring donations:
+
+<details><summary><b> LiberaPay </b></summary>
+
+<a href="https://liberapay.com/ololiuhqui/donate"><img alt="Donate using Liberapay" src="https://liberapay.com/assets/widgets/donate.svg"></a>
+
+Or GitHub sponsors
+
+</details>
 
 ## Contribute 🛠
 
