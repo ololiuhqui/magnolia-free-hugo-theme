@@ -119,7 +119,7 @@ If you wish you can support me in several ways:
 <details><summary><b> Bitcoin (BTC) </b></summary>
 
 ```
-bc1q2drx3x5pfl0c68urwztvjrwgksg9u3l7mn4g4m
+bc1q26f4gscc5ksujdx6wzxfnlqeqt02p3sjcqwvln
 ```
 
 ![btc-bc1q26f4gscc5ksujdx6wzxfnlqeqt02p3sjcqwvln](https://raw.githubusercontent.com/ololiuhqui/magnolia-free-hugo-theme/main/images/.readme_images/bitcoin-qr.png)
