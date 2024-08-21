@@ -5,10 +5,7 @@
 
 [![GitHub Actions Workflow Status](https://img.shields.io/github/actions/workflow/status/ololiuhqui/magnolia-free-hugo-theme/hugo.yaml?logo=hugo)](https://github.com/ololiuhqui/magnolia-free-hugo-theme/actions/workflows/hugo.yaml)
 [![Minimum Hugo Version](https://img.shields.io/static/v1?label=min-HUGO-version&message=>=v0.111.3&color=blue&logo=hugo)](https://github.com/gohugoio/hugo/releases/tag/v0.111.3)
-
 ![GitHub Repo stars](https://img.shields.io/github/stars/ololiuhqui/magnolia-free-hugo-theme)
-![Liberapay receiving](https://img.shields.io/liberapay/receives/ololiuhqui)
-![GitHub Sponsors](https://img.shields.io/github/sponsors/ololiuhqui)
 
 </div>
 
@@ -102,6 +99,9 @@ To add the custom 404 page and make it work on github pages or other hostings, y
 
 ## Remunerate my time and energy 💫
 
+![Liberapay receiving](https://img.shields.io/liberapay/receives/ololiuhqui)
+![GitHub Sponsors](https://img.shields.io/github/sponsors/ololiuhqui)
+
 Designing this theme and making it available for you took a lot of time and effort.
 
 The MIT license means that you are completely free to do whatevere you want with this theme, even [make money from it!](https://opensource.org/license/MIT)
@@ -155,6 +155,9 @@ And see the different outcomes if you run `git status` in the different director
 > **output (if run from theme root):** <br>
 > On branch main
 
+> **output (if run from exampleSite directory):** <br>
+> On branch exampleSite
+
 If you clone this repo you will have **2** different worktrees:
 
 | main 🌲     | exampleSite 🌲            |
@@ -162,7 +165,7 @@ If you clone this repo you will have **2** different worktrees:
 | main branch | exampleSite branch        |
 |             | theme as submodule (main) |
 
-### To add
+### Things to add to this theme
 
 #### Add a blog functionality
 
