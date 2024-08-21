@@ -63,12 +63,13 @@ These are the currently customizable sections:
 
 ## Quick start: how to install 📥
 
-1. Install hugo extended, follow [the official installation guide](https://gohugo.io/installation/).
-2. Create a new site: `hugo new site <sitename>`.
-3. Clone the theme repo as a submodule into your new site:`git init && git submodule add --depth=1 https://github.com/ololiuhqui/magnolia-free-hugo-theme themes/Magnolia`.
-4. Copy the content from "examplesite" to your site, from the root of your new website folder: `cp -rv themes/Magnolia/exampleSite/* ./`
-5. Delete your default `config.toml` from the root folder of your site; the new configurations will be found in `config/_default`. The main configuration file is `config/_default/config.toml`, but most variables are overwritten or defined by the individual language configuration files (eg. `config/_default/languages/.en.toml`)
-6. See the website preview with `hugo serve -D`
+1. Install hugo extended, follow [the official installation guide](https://gohugo.io/installation/). For using this theme you **DO NOT NEED** to execute `hugo new site`, as you will be cloning an example site in step 2.
+
+2. Clone the exampleSite and the theme from the repo:`git init && git clone -b exampleSite --recurse-submodules https://github.com/ololiuhqui/magnolia-free-hugo-theme <YourSiteName>` (change \<YourSiteName\> in the command with the name you wanna give to your site).
+
+3. Delete your default `config.toml` from the root folder of your site; the new configurations will be found in `config/_default`. The main configuration file is `config/_default/config.toml`, but most variables are overwritten or defined by the individual language configuration files (eg. `config/_default/languages/.en.toml`)
+
+4. Move to your site directory and see the website preview with `hugo serve -D`
 
 ## How to update ♻
 
@@ -78,7 +79,7 @@ These are the currently customizable sections:
 
 - Use your preferred color palette by modifying the Bootstrap variables in `assets/scss/custom-variables.scss`.
 
-- Change the config files adding your own elements to the pages. You can change the page names there as well.
+- Change the config files in `/config/_default` and `/config/_default/languages` adding your own elements to the pages. You can change the page names there as well.
 
 - Change the pages names, slugs and metadescriptions in `content/<language>/<page>.html`. The `_index.html` in the root of every content language folder is the homepage, refer to [Content organization | Hugo](https://gohugo.io/content-management/organization/).
 
