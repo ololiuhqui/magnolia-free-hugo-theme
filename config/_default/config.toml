@@ -6,6 +6,7 @@ defaultContentLanguageInSubDir = true
 enableRobotsTXT = true
 disableKinds = ["taxonomy", "term"] # This disables categories and tags and removes them from sitemap as they are not used
 theme = "Magnolia"
+googleAnalytics = ""
 
 [module]
     [[module.mounts]]
