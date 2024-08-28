@@ -6,22 +6,28 @@ The site structure is shown below:
 ├── assets
 │   ├── js
 │   └── scss
+│       ├── custom.scss
+│       ├── custom-variables.scss
+│       └── main.scss
 ├── config
 │   └── _default
+│       ├── config.toml
+│       └── languages
 ├── content
 │   ├── en
+│   │   ├── 404.html
+│   │   ├── contacts.html
+│   │   ├── _index.html
+│   │   ├── office
+│   │   ├── profile.webp
+│   │   └── services.html
 │   └── it
-├── public
-│   ├── css
-│   ├── en
-│   ├── fonts
-│   ├── img
-│   ├── index.html
-│   ├── it
-│   ├── js
-│   ├── robots.txt
-│   └── sitemap.xml
-├── README.md
+│       ├── 404.html
+│       ├── contacts.html
+│       ├── _index.html
+│       ├── office
+│       ├── profile.webp
+│       └── services.html
 └── themes
     └── Magnolia
 ```
