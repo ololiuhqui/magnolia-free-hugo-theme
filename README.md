@@ -11,12 +11,6 @@ The site structure is shown below:
 ├── content
 │   ├── en
 │   └── it
-├── LICENSE.md
-├── node_modules
-│   ├── bootstrap
-│   ├── bootstrap-icons
-│   ├── font-awesome
-│   └── @popperjs
 ├── public
 │   ├── css
 │   ├── en
@@ -28,8 +22,6 @@ The site structure is shown below:
 │   ├── robots.txt
 │   └── sitemap.xml
 ├── README.md
-├── resources
-│   └── _gen
 └── themes
     └── Magnolia
 ```
