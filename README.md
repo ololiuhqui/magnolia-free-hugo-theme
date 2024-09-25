@@ -11,9 +11,11 @@
 
 <br>
 
-**A simple, completely customizable, multilingual Hugo theme thought for professionals and small businesses.**
+**A simple, customizable, multilingual Hugo theme thought for professionals and small businesses.**
 
 I decided to give my personal _thank you_ to the Hugo developers and community by making this theme available for everyone.
+
+This theme is actually very "hugo noob" friendly, as it provides an **example site** to be used with the latest version of the theme, the main pages are there to be used as they are, with all the params already in the config files. you can customize the color palette and some of the pages images, but everything else is just a matter of modifying variables into a single _.toml_ file. This theme also aims to be well documented in order to be accessible even from a complete stranger and make your site run asap.
 
 I strongly value the open source community as in these years i've been using many open source projects that made my life better and improved my digital freedom in many ways.
 
@@ -24,7 +26,6 @@ Freedom makes us better humans, and makes us improve our status faster and in an
 ## Features ⚡
 
 I built this theme with simplicity in mind, it is small and easily customizable, responsive, modular and multilingual. But it also leaves some space to further in-depth customization since it uses **Bootstrap** and **SCSS**.
-
 This theme is thought to be used as a personal / business theme, it can provide a great landing page for your activity!
 
 ### 1. Responsive
