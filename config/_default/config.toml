@@ -15,3 +15,8 @@ googleAnalytics = ""
       [[module.mounts]]
       source = 'assets'
       target = 'assets'
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
