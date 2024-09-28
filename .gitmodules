@@ -1,4 +1,4 @@
 [submodule "magnolia-free-hugo-theme"]
-	path = magnolia-free-hugo-theme
+	path = themes/magnolia-free-hugo-theme
 	url = https://github.com/ololiuhqui/magnolia-free-hugo-theme
 	branch = main-feature/add-blog-functionality
