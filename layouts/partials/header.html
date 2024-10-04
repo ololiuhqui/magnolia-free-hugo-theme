@@ -33,6 +33,7 @@
           {{ end }}
           <li class="vr ms-1 d-none d-lg-block"></li>
           {{ if hugo.IsMultilingual}}
+          {{if .IsTranslated}}
           <li class="nav-item dropdown">
             <a
               class="nav-link nav-trad dropdown-toggle d-flex align-items-center justify-content-center"
@@ -49,7 +50,7 @@
             </a>
 
             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              {{ if .IsTranslated }}
+              
               
               {{ range .Translations }}
               
