@@ -17,6 +17,7 @@
 /*  */
 
 /* FUNCTIONS (from bootstrap, imported before bootstrap in order to define custom variables) */
+// Tint a color: mix a color with white
 @function tint-color($color, $weight) {
   @return mix(white, $color, $weight);
 }
@@ -198,6 +199,20 @@ footer {
   }
 }
 
+/* END FOOTER */
+
+/* SINGLE POST */
+.post-img {
+  max-height: 30vh;
+  width: 100%;
+  object-fit: cover;
+}
+/* END SINGLE POST */
+
+/* POST GRID */
+
+/* END POST GRID */
+
 /* MISC */
 .form-group {
   font-family: JosefinSans;
@@ -211,6 +226,10 @@ footer {
   width: 25px;
   margin-left: 10px;
   margin-right: 10px;
+}
+
+.dark-overlay {
+  opacity: 10%;
 }
 /*  */
 
