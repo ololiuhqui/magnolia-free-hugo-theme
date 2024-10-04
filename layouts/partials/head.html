@@ -1,9 +1,21 @@
 <head>
+  {{if .IsHome}}
   <title>{{.Page.Title}} {{.Site.Title}} {{.Site.Params.subtitle}}</title>
+  {{else}}
+  <title>{{.Page.Title}} | {{.Site.Title}} {{.Site.Params.subtitle}}</title>
+  {{end}}
   <meta charset="utf-8" />
-  <meta name="description" content="{{.Page.Params.params.metaDesc}}" />
+  <meta
+    name="description"
+    {{if.Page.Description}}
+    content="{{.Page.Description}}"
+    {{else}}
+    content="{{.Page.Summary}}"
+    {{end}}
+  />
+
   <meta name="dc.relation" content="{{ .Site.BaseURL }}" />
-  {{if eq .Page.Layout "404"}}
+  {{if not .Params.Index}}
   <meta name="robots" content="noindex" />
   {{else}}
   <meta name="robots" content="index,follow" />
@@ -14,7 +26,14 @@
     itemprop="name"
     content="{{.Page.Title}} {{.Site.Title}} {{.Site.Params.subtitle}}"
   />
-  <meta itemprop="description" content="{{.Page.Params.params.metaDesc}}" />
+  <meta
+    itemprop="description"
+    {{if.Page.Description}}
+    content="{{.Page.Description}}"
+    {{else}}
+    content="{{.Page.Summary}}"
+    {{end}}
+  />
   <meta itemprop="image" content="{{ "img/meta-image" | absURL}}" />
 
   <!-- Facebook Meta Tags -->
@@ -24,7 +43,14 @@
     property="og:title"
     content="{{.Page.Title}} {{.Site.Title}} {{.Site.Params.subtitle}}"
   />
-  <meta property="og:description" content="{{.Page.Params.params.metaDesc}}" />
+  <meta
+    property="og:description"
+    {{if.Page.Description}}
+    content="{{.Page.Description}}"
+    {{else}}
+    content="{{.Page.Summary}}"
+    {{end}}
+  />
   <meta property="og:image" content="{{ "img/meta-image" | absURL}}" />
 
   <!-- Twitter Meta Tags -->
@@ -33,7 +59,14 @@
     name="twitter:title"
     content="{{.Page.Title}} {{.Site.Title}} {{.Site.Params.subtitle}}"
   />
-  <meta name="twitter:description" content="{{.Page.Params.params.metaDesc}}" />
+  <meta
+    name="twitter:description"
+    {{if.Page.Description}}
+    content="{{.Page.Description}}"
+    {{else}}
+    content="{{.Page.Summary}}"
+    {{end}}
+  />
   <meta name="twitter:image" content="{{ "img/meta-image" | absURL}}" />
 
   <meta
