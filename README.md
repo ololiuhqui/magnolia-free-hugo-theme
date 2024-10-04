@@ -97,7 +97,7 @@ These are the currently customizable sections:
 
 ## Custom 404 page
 
-To add the custom 404 page and make it work on github pages or other hostings, you will have to add it manually when building the site executing `hugo`. This is because github pages looks for a 404 template in the root directory of the project, you can therefore only have one single 404 page for all the languages. To create a symlink to the english 404 version, which will then be used as default 404 once hosting, after running `hugo` run `ln -s public/en/404/index.html public/404.html`.
+To add the custom 404 page and make it work on github pages, you will have to add it manually when building the site executing `hugo`. This is because github pages looks for a 404 template in the root directory of the project, you can therefore only have one single 404 page for all the languages. To create a symlink to the english 404 version, which will then be used as default 404 once hosting, after running `hugo` run `ln -s public/en/404/index.html public/404.html`.
 
 ## Remunerate my time and energy 💫
 
@@ -106,7 +106,7 @@ To add the custom 404 page and make it work on github pages or other hostings, y
 
 Designing this theme and making it available for you took a lot of time and effort.
 
-The MIT license means that you are completely free to do whatevere you want with this theme, even [make money from it!](https://opensource.org/license/MIT)
+The MIT license means that you are completely free to do whatevere you want with this theme, even [make money from it!](https://opensource.org/license/MIT) With the only obligation to include the attribution!
 
 If you wish you can support me in several ways:
 
