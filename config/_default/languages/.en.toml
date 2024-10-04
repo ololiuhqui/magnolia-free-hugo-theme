@@ -33,7 +33,8 @@ Look at what this theme is capable to do on the features page, and see a beautif
     mainButtonRef = "features" # Just write the name or slug of the page here
     secondButton = "Contacts"
     secondButtonRef = "contacts" # Just write the name of the page here
-
+  # For the blog feed section (relevant only if the blog feature is enabled in config.toml)
+    blogTitle = "Interesting Stories"
 
 [params.office]
   title = "The Office"
@@ -82,10 +83,6 @@ Look at what this theme is capable to do on the features page, and see a beautif
     [params.services.list.06]
       title = "Google Maps Included"
       description= "The contact page can be easily customized by adding a google maps link to get directions towards your activity location."
-
-
-  
-# /. PAGES
 
 [params.socials]
   enabled = true # enables/disables the whole social section in the footer

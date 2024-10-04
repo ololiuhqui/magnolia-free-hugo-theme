@@ -33,6 +33,8 @@ Guardate cosa è in grado di fare questo tema nella pagina delle caratteristiche
     mainButtonRef = "caratteristiche" # Just write the name or slug of the page here
     secondButton = "Contatti"
     secondButtonRef = "contatti" # Just write the name of the pages here
+    # For the blog feed section (relevant only if the blog feature is enabled in config.toml)
+    blogTitle = "Storie interessanti"
 
 [params.office]
   title = "Uffici"

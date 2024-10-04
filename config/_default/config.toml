@@ -4,10 +4,23 @@ title = 'Magnolia Default' # This can get overwritten by the single language fil
 defaultContentLanguage = 'en'
 defaultContentLanguageInSubDir = true
 enableRobotsTXT = true
-disableKinds = ["taxonomy", "term"] # This disables categories and tags and removes them from sitemap as they are not used
 theme = "Magnolia"
 googleAnalytics = ""
 
+#  BLOG MODE #
+
+# This disables categories, tags and sections and removes them from sitemap indexing as they are not used:
+# Delete section if activating blog mode
+# Delete taxonomy and term if using tags and categories
+disableKinds = ["taxonomy", "term"]
+# for reference:
+# disableKinds = ["taxonomy", "term", "section"]
+[params]
+[params.blogMode]
+# Activate/Deactivate blog posts
+active = true
+
+# Developer area
 [module]
     [[module.mounts]]
       source = "node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"
