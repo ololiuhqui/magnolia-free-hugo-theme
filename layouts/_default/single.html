@@ -1,5 +1,17 @@
 {{ define "main" }}
 
-<div class="container">{{ .Content }}</div>
+<div class="container">
+  {{ with .Resources.GetMatch "images/featured*" }}
+  <img
+    class="rounded img-fluid shadow post-img mb-3"
+    src="{{ .RelPermalink }}"
+    alt="{{$.Title}} post featured image"
+  />
+  {{end}}
+
+  <h1>{{.Title}}</h1>
+
+  {{ .Content }}
+</div>
 
 {{ end }}
