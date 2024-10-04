@@ -1,6 +1,6 @@
 {{- define "main" -}}
 
-<div class="row gx-5 gy-3 mb-2">
+<div class="row gx-5 gy-3 mb-5">
   <div class="col-lg-4">
     <!-- profile picture-->
     <img
@@ -39,18 +39,20 @@
       >
     </div>
   </div>
+  <br />
+  <br />
+  <hr />
 </div>
+
 <!-- Description -->
-{{ if .Site.Params.homepage.description.enabled}}
-<div class="row mt-5 align-items-center">
-  <h2 class="text-center">
-    {{ .Site.Params.homepage.description.secondTitle}}
-  </h2>
-  <p class="text-center">
-    {{ .Site.Params.homepage.description.paragraph | markdownify}}
-  </p>
-  <p class="text-center">
-    {{ .Site.Params.homepage.description.paragraph2 | markdownify}}
-  </p>
-</div>
-{{ end }} {{- end -}}
+<div class="mt-5 align-items-center">{{ .Content }}</div>
+<!--  -->
+
+<!-- latest posts -->
+
+{{with .Site.Params.blogMode.active}} {{with (site.GetPage "/posts").Pages}}
+<h2 class="text-center my-4">{{$.Site.Params.homepage.blogTitle}}</h2>
+{{- partial "posts-list.html" . -}} {{end}} {{end}}
+<!--  -->
+
+{{- end -}}
