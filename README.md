@@ -159,6 +159,8 @@ As an alternative you can also clone the **exampleSite** with the `recurse-submo
 
 #### Add a blog functionality
 
+**THIS FEATURE IS CURRENTLY IN DEVELOPMENT IN DEDICATED BRANCHES**
+
 Currently the theme doesn't properly support a blog functionality: you can add as many pages as you want but they do not appear anywhere in the site unless you share the direct link.
 
 This is because the theme is thought to host a very simple landing website. It might be cool to include an optional blog feature though.
