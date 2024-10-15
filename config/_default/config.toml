@@ -2,23 +2,15 @@ baseURL = 'https://example.com'
 languageCode = ''
 title = 'Magnolia Default' # This can get overwritten by the single language files
 defaultContentLanguage = 'en'
-defaultContentLanguageInSubDir = true
+# defaultContentLanguageInSubDir = true
 enableRobotsTXT = true
 theme = "Magnolia"
 googleAnalytics = ""
 
-#  BLOG MODE #
-
-# This disables categories, tags and sections and removes them from sitemap indexing as they are not used:
-# Delete section if activating blog mode
-# Delete taxonomy and term if using tags and categories
-disableKinds = ["taxonomy", "term"]
-# for reference:
-# disableKinds = ["taxonomy", "term", "section"]
-[params]
-[params.blogMode]
-# Activate/Deactivate blog posts
-active = true
+#  BLOG  #
+[taxonomies]
+# Delete line below to remove tags rendering
+tag = "tags"
 
 # Developer area
 [module]
@@ -28,7 +20,8 @@ active = true
       [[module.mounts]]
       source = 'assets'
       target = 'assets'
-
+  
+    
 [markup]
   [markup.goldmark]
     [markup.goldmark.renderer]

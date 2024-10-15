@@ -6,6 +6,10 @@ copyright = """Designed with [Hugo](https://gohugo.io/) by [Ludovico Caluori](ht
  Licensed under [MIT license](https://github.com/ololiuhqui/magnolia-free-hugo-theme/blob/main/LICENSE.md) 📄""" # Please leave this here to give me and the tools i used some credit for the work, or BuyMeACoffee and change or remove the copyrightlink below :)
 contentDir = "content/en"
 
+# BLOG MODE
+# Uncomment if you want to disable all posts and taxonomies rendering and indexing
+#ignoreFiles= 'posts/*'
+
 # Change single params to false to remove from rendering
 [params]
   subtitle = "Free Hugo theme" # This goes in the header and in the site title
@@ -32,9 +36,10 @@ Look at what this theme is capable to do on the features page, and see a beautif
     mainButton = "Features"
     mainButtonRef = "features" # Just write the name or slug of the page here
     secondButton = "Contacts"
-    secondButtonRef = "contacts" # Just write the name of the page here
-  # For the blog feed section (relevant only if the blog feature is enabled in config.toml)
+    secondButtonRef = "contacts" # Just write the name or slug of the page here
+  # For the blog feed section (visible only if posts are rendered)
     blogTitle = "Interesting Stories"
+    blogButton= "More Stories"
 
 [params.office]
   title = "The Office"
@@ -138,13 +143,13 @@ Look at what this theme is capable to do on the features page, and see a beautif
   weight = 1
   [[menus.main]]
   name = "Features"
-  pageRef = "/services"
+  pageRef = "pages/services"
   weight = 2
   [[menus.main]]
   name = "The Office"
-  pageRef = "/office"
+  pageRef = "pages/office"
   weight = 3
   [[menus.main]]
   name = "Contacts"
-  pageRef = "/contacts"
+  pageRef = "pages/contacts"
   weight = 4

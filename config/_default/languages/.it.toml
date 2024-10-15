@@ -1,22 +1,23 @@
 disabled = false
 languageCode = 'it-IT'
 languageName = 'Italiano'
-title = 'Magnolia' # This will go in the Header as well
+title = 'Magnolia' 
 copyright = """Designed with [Hugo](https://gohugo.io/) by [Ludovico Caluori](https://github.com/ololiuhqui) 🎨 \n
- Licensed under [MIT license](https://github.com/ololiuhqui/magnolia-free-hugo-theme/blob/main/LICENSE.md) 📄""" # Please leave this here to give me and the tools i used some credit for the work, or BuyMeACoffee and change or remove the copyrightlink below :)
-contentDir = "content/it"
+ Licensed under [MIT license](https://github.com/ololiuhqui/magnolia-free-hugo-theme/blob/main/LICENSE.md) 📄"""
+contentDir="content/it"
 
-# Change single params to false to remove from rendering
+# BLOG MODE
+# Uncomment if you want to disable all posts and taxonomies rendering and indexing
+#ignoreFiles= 'posts/*'
+
 [params]
-  subtitle = "Free Hugo theme" # This goes in the header and in the site title
-  # PAGES
+  subtitle = "Free Hugo theme" 
+
+# PAGES
+
   [params.homepage]
-    # Notice that SEO meta tags (what appears in google search results) can be set
-    # in individual pages frontmatters `/content/<page>`
-    ###
     preTitle = 'Free Hugo theme'
     title = "Magnolia"
-    # You can use some markdown safely here as long as you don't include line breaks
     intro= """
 ### "La libertà ci rende esseri umani migliori e ci fa migliorare più velocemente il nostro status di razza collettiva ".
 ___
@@ -30,25 +31,26 @@ Qui c'è la [pagina github del tema](https://github.com/ololiuhqui/magnolia-free
 Guardate cosa è in grado di fare questo tema nella pagina delle caratteristiche e vedete un bellissimo esempio di pagina dei contatti qui sotto.
         """
     mainButton = "Caratteristiche"
-    mainButtonRef = "caratteristiche" # Just write the name or slug of the page here
+    mainButtonRef = "caratteristiche"
     secondButton = "Contatti"
-    secondButtonRef = "contatti" # Just write the name of the pages here
-    # For the blog feed section (relevant only if the blog feature is enabled in config.toml)
+    secondButtonRef = "contatti" 
+    
     blogTitle = "Storie interessanti"
+    blogButton= "More Stories"
 
 [params.office]
   title = "Uffici"
  description = "Questa pagina può essere facilmente personalizzata con l'aggiunta di un link a Google Maps per ottenere indicazioni stradali verso il luogo dell'attività."
  buttonText = "Indicazioni" 
- buttonLink = "https://maps.app.goo.gl/LzsPzRkTYSZ8SF3y8" # google maps "share" link here (for button)
+ buttonLink = "https://maps.app.goo.gl/LzsPzRkTYSZ8SF3y8" 
  mapLink = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d382266.44569392945!2d-76.55832397784323!3d41.53770983690751!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c4d93a77484bbb%3A0xfff27920ab9bfae8!2sScranton%2C%20Pennsylvania%2C%20Stati%20Uniti!5e0!3m2!1sit!2sit!4v1716459350324!5m2!1sit!2sit" # google maps "embed" link here
 
 [params.contacts]
   title = "Contattaci!"
   formCallToAction = "Questa è una pagina di esempio \"contattaci\"; è possibile ricevere le risposte dei moduli su FormSpree (gratis)."
-  socialCallToAction = "Puoi aggiungere i tuoi link ai social media qui sotto!" # These are the same as in [params.social]
+  socialCallToAction = "Puoi aggiungere i tuoi link ai social media qui sotto!" 
   [params.contacts.form]
-    formspreeLink = "https://yourformspreelink.com" #subscribe to formspree and add the link for the form here
+    formspreeLink = "https://yourformspreelink.com"
     firstname = "Nome*"
     lastname = "Cognome*"
     email = "E-mail*"
@@ -61,7 +63,6 @@ Guardate cosa è in grado di fare questo tema nella pagina delle caratteristiche
   description = """ Ho costruito questo tema pensando alla semplicità: è piccolo e facilmente personalizzabile, reattivo, modulare e multilingue. Ma lascia anche spazio ad ulteriori personalizzazioni approfondite, poiché utilizza Bootstrap e SCSS.
   Questa pagina mostra anche un esempio di come si possono cambiare i nomi delle pagine del sito: Il sito utilizzerà il layout `services.html`, ma la pagina si chiamerà "Caratteristiche" e il link userà il relative permalink `/caratteristiche`."""
   [params.services.list]
-    # You can add as much params.services.list.<N> as you like
     [params.services.list.0]
       title= "Responsività"
       description= "Il tema è completamente reattivo e si visualizza perfettamente su ogni dimensione dello schermo."
@@ -84,12 +85,8 @@ Guardate cosa è in grado di fare questo tema nella pagina delle caratteristiche
       title = "Google Maps Incluso"
       description= "La pagina dei contatti può essere facilmente personalizzata con l'aggiunta di un link a Google Maps per ottenere indicazioni stradali verso la sede dell'attività."
 
-
-  
-# /. PAGES
-
 [params.socials]
-  enabled = true # enables/disables the whole social section in the footer
+  enabled = true 
   callToAction= "Connettiti con noi sui social media >"
       [[params.socials.link]]
         name = "github"
@@ -100,16 +97,12 @@ Guardate cosa è in grado di fare questo tema nella pagina delle caratteristiche
       [[params.socials.link]]
         name = "whatsapp"
         link = ""
-      # You can add other socials here by copypasting the above section and
-      # selecting the right name for the icon from here https://icons.getbootstrap.com/
 
-[params.schedules] # Time schedules (eg. your office openming hours)
-  enabledFooter = false # This will add the schedules on the footer too
-  enabledContacts = true # This will add the schedule to the contact page
-  title = "Office hours" # For contacts page only
+[params.schedules]
+  enabledFooter = false 
+  enabledContacts = true 
+  title = "Office hours"
   [params.schedules.days]
-  # Use something like "Monday: 9-13" for each day
-  # if left empty it is disabled (default)
     day1 = "Lunedì: 9:00 – 19:00"
     day2 = "Martedì: 9:00 – 19:00"
     day3 = "Mercoledì: 9:00 – 19:00"
@@ -124,7 +117,7 @@ Guardate cosa è in grado di fare questo tema nella pagina delle caratteristiche
   [params.footer.navigate]
   heading = "Naviga"   
   [params.footer.contacts]
-  enabled = true # enables/disables the whole contacts section in footer
+  enabled = true 
   heading = "Contatti"
   address = "Scranton 2865 Pouros Corners 55441-0788"
   mail = "dundermifflin@fakemail.com"
@@ -132,23 +125,22 @@ Guardate cosa è in grado di fare questo tema nella pagina delle caratteristiche
   phone = "+00 0000000"
   
 [params.notfound]
-  title = "404, page not found" # text for 404 page
+  title = "404, page not found"
 
 [menus]
-# PageRef should refer to the "translationKey" in `/content/<page>` frontmatter, names can be changed freely
   [[menus.main]]
   name = "Home"
   pageRef = "/"
   weight = 1
   [[menus.main]]
   name = "caratteristiche"
-  pageRef = "/services"
+  pageRef = "pages/services"
   weight = 2
   [[menus.main]]
   name = "Uffici"
-  pageRef = "/office"
+  pageRef = "pages/office"
   weight = 3
   [[menus.main]]
   name = "Contatti"
-  pageRef = "/contacts"
+  pageRef = "pages/contacts"
   weight = 4
