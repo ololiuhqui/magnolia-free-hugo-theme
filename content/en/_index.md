@@ -2,7 +2,6 @@
 title: ''
 description: 'A free hugo theme'
 draft: false
-layout: '_index'
 ---
 
 <h1 style="text-align: center;">How to use this theme</h1>

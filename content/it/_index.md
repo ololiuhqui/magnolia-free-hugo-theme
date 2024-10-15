@@ -2,7 +2,6 @@
 title: ''
 description: 'Un tema Hugo gratuito'
 draft: false
-layout: '_index'
 ---
 
 <h1 style="text-align: center;">Come usare questo tema</h1>
