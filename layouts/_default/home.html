@@ -50,9 +50,23 @@
 
 <!-- latest posts -->
 
-{{with .Site.Params.blogMode.active}} {{with (site.GetPage "/posts").Pages}}
+{{with (site.GetPage "/posts")}}
+<hr />
 <h2 class="text-center my-4">{{$.Site.Params.homepage.blogTitle}}</h2>
-{{- partial "posts-list.html" . -}} {{end}} {{end}}
-<!--  -->
 
-{{- end -}}
+<!--  -->
+<div class="row g-3 mb-3">
+  {{range first 4 .Pages}} {{- partial "post-card.html" . -}} {{end}}
+</div>
+<div class="d-flex justify-content-center">
+  <a
+    class="btn btn-primary btn-lg px-5 py-3 fs-6 fw-bolder shadow-sm"
+    href="{{ .RelPermalink }}"
+    >{{$.Site.Params.homepage.blogButton}}</a
+  >
+</div>
+
+{{end}}
+
+<!--  -->
+ {{- end -}}
