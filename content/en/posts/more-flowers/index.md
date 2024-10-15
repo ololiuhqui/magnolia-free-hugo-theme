@@ -1,7 +1,8 @@
 ---
 title: 'More Flowers'
 slug: 'more-flowers'
-summary: "They are incredibly beautiful, aren't Them? Well, of course They Are!" # This is what will be displayed as summary for the post (the theme will automatically generate one from the content you write in the post if left empty)
+tags: ['flowers', 'growing']
+summary: "_They are incredibly beautiful, aren't Them? Well, of course They Are!_ \n \n I wrote this summary by hand, you can do it too in the `content/posts/<post-name>/index.md` file! But don't worry, if you don't write a summary yourself, the theme will grab it automagically from the content of the post! And it will include it in SEO too!" # This is what will be displayed as summary for the post (the theme will automatically generate one from the content you write in the post if left empty)
 description: # This is what will be displayed as meta description (the theme will automatically grab it from summary if left empty)
 date: '2024-10-03T10:49:18+02:00'
 expiryDate: ''
@@ -10,6 +11,9 @@ draft:
 type: # This is here for future possible development, you can leave it blank
 layout: 'single'
 # Refer to [Front matter | Hugo](https://gohugo.io/content-management/front-matter/)
+Params:
+  imageAttribution: 'Photo by <a href="https://unsplash.com/it/@elmuff?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Sandra Grünewald</a> on <a href="https://unsplash.com/it/foto/fiori-rosa-sul-ramo-dellalbero-5qZzzFnG1qw?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
+  ' # Set an attribution to the author of the picture you're using for the post
 ---
 
 ```

@@ -1,6 +1,7 @@
 ---
 title: 'Perché Donare a Progetti Di Software Opensource È Importante'
 slug: 'perché-donare-a-progetti-di-software-opensource-è-importante'
+tags: ['Piantare', 'Far Crescere', 'Software Libero']
 summary: # This is what will be displayed as summary for the post (the theme will automatically generate one from the content you write in the post if left empty)
 description: # This is what will be displayed as meta data (the theme will automatically grab it from summary if left empty)
 date: '2024-10-04T11:15:09+02:00'
@@ -9,6 +10,9 @@ translationKey: donating-opensource # If you have a translated post for this one
 draft:
 type: # This is here for future possible development, you can leave it blank
 layout: 'single'
+Params:
+  imageAttribution: "Foto dalla copertina del libro 'Program or be Programmed' di Douglas Rushkoff"
+  # Set an attribution to the author of the picture you're using for the post
 # Refer to [Front matter | Hugo](https://gohugo.io/content-management/front-matter/)
 ---
 

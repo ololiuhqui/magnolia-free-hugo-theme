@@ -1,7 +1,8 @@
 ---
-title: 'Piu Fiori'
+title: 'Più Fiori'
 slug: 'piu-fiori'
-summary: 'Sono incredibilmente belli, non è vero? Beh, certo che lo sono!' # This is what will be displayed as summary for the post (the theme will automatically generate one from the content you write in the post if left empty)
+tags: ['fiori', 'far crescere']
+summary: "_Sono incredibilmente belli, non è vero? Beh, certo che lo sono!_ \n \n Ho scritto questo riassunto a mano, puoi farlo anche tu nel file `content/posts/<nome-post>/index.md`! Ma non preoccuparti, se non scrivi un riassunto tu stesso, il tema lo prenderà automaticamente dal contenuto del post! E lo includerà anche nel SEO!" # This is what will be displayed as summary for the post (the theme will automatically generate one from the content you write in the post if left empty)
 description: # This is what will be displayed as meta data (the theme will automatically grab it from summary if left empty)
 date: '2024-10-03T10:58:12+02:00'
 expiryDate: ''

@@ -1,6 +1,7 @@
 ---
 title: 'Why Donating to Free and Opensource Software Projects Is Important'
 slug: 'why-donating-to-free-and-opensource-software-projects-is-important'
+tags: ['growing', 'planting', 'foss']
 summary: 'Digital networks were built for the purpose of sharing computing resources by people who were themselves sharing resources, technologies, and credit in order to create it. This is why digital technology is biased in favor of openness and sharing. Because we are not used to operating in a realm with these biases, however, we often exploit the openness of others or end up exploited ourselves.' # This is what will be displayed as summary for the post (the theme will automatically generate one from the content you write in the post if left empty)
 description: # This is what will be displayed as meta data (the theme will automatically grab it from summary if left empty)
 date: '2024-10-03T11:16:02+02:00'
@@ -9,6 +10,8 @@ translationKey: donating-opensource # If you have a translated post for this one
 draft:
 type: # This is here for future possible development, you can leave it blank
 layout: 'single'
+Params:
+  imageAttribution: "Photo from the cover of the book 'Program or be Programmed' by Douglas Rushkoff" # Set an attribution to the author of the picture you're using for the post
 # Refer to [Front matter | Hugo](https://gohugo.io/content-management/front-matter/)
 ---
 
