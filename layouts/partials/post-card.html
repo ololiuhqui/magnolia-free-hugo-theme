@@ -1,9 +1,5 @@
-{{with (site.GetPage "/posts").Pages}}
-<hr>
+<!-- Takes a page and returns it as a card -->
 
-<div class="row g-3 mb-5">
-  <!-- This range through all the pages in the content/<language>/posts only -->
-  {{ range first 6 (site.GetPage "/posts").Pages}}
   <div class="col-12 col-md-6 ">
     <div class="card p-0 bg-secondary shadow-sm border-none h-100" >
         <div class="row h-100" >
@@ -27,12 +23,17 @@
                   <a href="{{.RelPermalink}}">{{.Title}}</a>
                   
                 </h5>
-                <p class="card-text"><small class="text-body-secondary">{{.Date | time.Format "2 January , 2006"}}</small></p>
+                <p class="card-text my-0"><small class="text-body-secondary">{{.Date | time.Format "2 January , 2006"}}</small></p>
+                {{with .GetTerms "tags"}}
+                {{range first 3 .}}
+                <a href="{{.RelPermalink}}" class="btn btn-sm btn-secondary border-primary mb-2">{{.Title}}</a>
+                {{end}}
+                {{end}}
               </div>
               <p class="card-text d-none d-lg-block">{{.Summary}}</p>
               <div>
                 <p class="card-text"></p>
-                <small class="text-body-secondary">{{.ReadingTime}} minutes read</small>
+                <small class="">{{.ReadingTime}} minutes read</small>
               </p>
               <a href="{{.RelPermalink}}" class="btn btn-primary">Read More</a>
               </div>
@@ -40,8 +41,4 @@
           </div>
         </div>
     </div>    
-  </div>
-  {{end}}
 </div>
-<hr>
-{{end}}
