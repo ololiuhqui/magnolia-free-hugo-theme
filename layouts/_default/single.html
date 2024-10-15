@@ -2,16 +2,56 @@
 
 <div class="container">
   {{ with .Resources.GetMatch "images/featured*" }}
+  <h1>{{$.Title}}</h1>
   <img
     class="rounded img-fluid shadow post-img mb-3"
     src="{{ .RelPermalink }}"
     alt="{{$.Title}} post featured image"
   />
   {{end}}
+  <div class="row g-2">
+    <div class="col-sm-12 col-md-6">
+      {{range .GetTerms "tags"}}
+      <a href="{{.RelPermalink}}" class="btn btn-sm border-primary"
+        >#{{.Title}}</a
+      >
+      {{end}}
+    </div>
+    <div class="col-sm-12 col-md-6 d-flex justify-content-md-end">
+      <small class="text-muted"
+        >{{.Params.imageAttribution | markdownify}}</small
+      >
+    </div>
+    <div class="row g-2">
+      <small class="text-muted col"
+        >{{.Date | time.Format "2 January , 2006"}}</small
+      >
+    </div>
+  </div>
 
-  <h1>{{.Title}}</h1>
+  <hr />
 
-  {{ .Content }}
+  {{ with .Content }} 
+  {{.}}
+  {{end}}
+  
+  {{if .GetTerms "tags"}}
+
+  <hr />
+  <h4 class="text-center my-4">Similar Content</h4>
+
+  <!-- Related posts -->
+  <div class="row g-3 mb-3">
+    {{$pagesToRender:= slice }} {{range .GetTerms "tags"}} {{range first 6
+    .Pages}} {{$pageToAppend := .}}
+    <!-- check whether the page is already in pagestorender  -->
+    {{if in $pagesToRender $pageToAppend | not}} {{if eq $pageToAppend $.Page |
+    not}} {{$pagesToRender = $pagesToRender | append $pageToAppend }} {{end}}
+    {{end}} {{end}} {{end}} {{range $pagesToRender}} {{partial "post-card" .}}
+    {{end}}
+  </div>
+
+  {{end}}
 </div>
 
 {{ end }}
