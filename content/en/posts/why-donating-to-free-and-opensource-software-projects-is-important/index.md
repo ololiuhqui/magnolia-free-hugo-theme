@@ -15,6 +15,8 @@ Params:
 # Refer to [Front matter | Hugo](https://gohugo.io/content-management/front-matter/)
 ---
 
+## VII. SOCIAL
+
 _In spite of its many dehumanizing tendencies, digital media is
 still biased toward the social. In the ongoing coevolution between
 people and technologies, tools that connect us thrive—and tools
@@ -42,6 +44,8 @@ But it is this contact, this desire to construct a social organism together, tha
 
 The content is not the message, the contact is. The ping itself. It’s the synaptic transmission of an organism trying to wake itself up.
 
+## IX. OPENNESS
+
 _Digital networks were built for the purpose of sharing computing
 resources by people who were themselves sharing resources,
 technologies, and credit in order to create it. This is why digital
@@ -51,6 +55,6 @@ often exploit the openness of others or end up exploited ourselves.
 By learning the diﬀerence between sharing and stealing, we can
 promote openness without succumbing to selﬁshness._
 
-The people on the other side of the screen spent time and energy on the things we read and watch. When we insist on consuming it for free, we are pushing them toward something much closer to the broadcast television model, where ads fund everything. We already know what that does for the quality of news and entertainment. Yet this is precisely the model that the ad-based hosts and search engines are pushing for. By encouraging us to devalue and deprofessionalize our work, these companies guarantee a mediaspace where only they get paid. They devalue the potential of the network itself to createvalue in new ways. It’s just like free TV, except the writers and actors don’t receive any income. Instead, they just pay for the equipment to create and for access to the servers they don’t own
+The people on the other side of the screen spent time and energy on the things we read and watch. When we insist on consuming it for free, we are pushing them toward something much closer to the broadcast television model, where ads fund everything. We already know what that does for the quality of news and entertainment. Yet this is precisely the model that the ad-based hosts and search engines are pushing for. By encouraging us to devalue and deprofessionalize our work, these companies guarantee a mediaspace where only they get paid. They devalue the potential of the network itself to createvalue in new ways. It’s just like free TV, except the writers and actors don’t receive any income. Instead, they just pay for the equipment to create and for access to the servers they don’t own.
 
 **[From Douglas Rushkoff - Program or Be Programmed](https://rushkoff.com/)**

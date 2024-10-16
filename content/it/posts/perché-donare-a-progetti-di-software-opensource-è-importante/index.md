@@ -16,6 +16,8 @@ Params:
 # Refer to [Front matter | Hugo](https://gohugo.io/content-management/front-matter/)
 ---
 
+## VII. SOCIAL
+
 _Nonostante le sue numerose tendenze disumanizzanti, i media digitali sono ancora orientati verso il sociale. Nella continua coevoluzione tra persone e tecnologie, gli strumenti che ci connettono prosperano e quelli che non ci connettono imparano presto a farlo. Dobbiamo ricordare che la tendenza dei media digitali è quella di entrare in contatto con altre persone, non con i loro contenuti o, peggio, con il loro denaro. Se non lo facciamo, rischiamo di privarci del principale dono che la tecnologia digitale ha da offrirci in cambio del fatto che l'abbiamo creata._
 
 Ciò che tutte queste aziende di social network continuano a sbagliare, tuttavia, è che la rete non sta diventando un mezzo sociale. Lo è già. La storia di Internet può probabilmente essere meglio compresa come un mezzo sociale che si è ripetutamente scrollato di dosso i tentativi di trasformarlo in qualcos'altro. E continuerà a farlo. Le nostre reti digitali sono orientate verso le connessioni sociali, verso il contatto. Qualsiasi tentativo di ridefinire o dirottare tali connessioni a scopo di lucro finisce per compromettere l'integrità della rete stessa e per compromettere la vera promessa del contatto.
@@ -31,6 +33,8 @@ Siamo troppo lenti a capire che le persone non sono una forma di contenuto, una 
 Ma è proprio questo contatto, questo desiderio di costruire insieme un organismo sociale, che è sempre stato il motore della tecnologia digitale. L'istinto di aumentare i contatti è l'imperativo evolutivo che sentiamo per diventare qualcosa di più grande di noi. Proprio come gli atomi si sono combinati in molecole, le molecole si sono raggruppate in cellule e le cellule si sono riunite in organismi, noi organismi ci stiamo mettendo in rete per raggiungere livelli di organizzazione maggiori.
 
 Il contenuto non è il messaggio, ma il contatto. Il ping stesso. È la trasmissione sinaptica di un organismo che cerca di svegliarsi.
+
+## IX. APERTURA
 
 _Le reti digitali sono state costruite allo scopo di condividere le risorse informatiche da persone che a loro volta condividevano risorse, tecnologie e crediti per crearle. Per questo motivo la tecnologia digitale è favorevole all'apertura e alla condivisione. Tuttavia, poiché non siamo abituati a operare in un ambito con questi pregiudizi, spesso sfruttiamo l'apertura degli altri o finiamo per essere sfruttati noi stessi. Imparando la differenza tra condividere e rubare, possiamo promuovere l'apertura senza soccombere all'egocentrismo._
 
