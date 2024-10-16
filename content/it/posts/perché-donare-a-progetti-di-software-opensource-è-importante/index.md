@@ -41,3 +41,45 @@ _Le reti digitali sono state costruite allo scopo di condividere le risorse info
 Le persone dall'altra parte dello schermo hanno speso tempo ed energia per le cose che leggiamo e guardiamo. Quando insistiamo per consumarle gratuitamente, le spingiamo verso qualcosa di molto più simile al modello televisivo, dove la pubblicità finanzia tutto. Sappiamo già quali sono le conseguenze per la qualità delle notizie e dell'intrattenimento. Eppure è proprio questo il modello che gli host e i motori di ricerca basati sulla pubblicità stanno spingendo. Incoraggiandoci a svalutare e deprofessionalizzare il nostro lavoro, queste aziende garantiscono uno spazio mediatico in cui solo loro vengono pagati. Svalutano il potenziale della rete stessa di creare valore in modi nuovi. È come la televisione gratuita, solo che gli autori e gli attori non ricevono alcun reddito. Invece, pagano solo le attrezzature per creare e l'accesso ai server che non possiedono.
 
 **[Da Douglas Rushkoff - Program or Be Programmed](https://rushkoff.com/)**
+
+## Remunera il mio tempo e le mie energie 💫
+
+![Liberapay receiving](https://img.shields.io/liberapay/receives/ololiuhqui)
+![GitHub Sponsors](https://img.shields.io/github/sponsors/ololiuhqui)
+
+Progettare questo tema e renderlo disponibile per voi ha richiesto molto tempo e impegno.
+
+La licenza MIT significa che siete completamente liberi di fare tutto ciò che volete con questo tema, anche guadagnarci sopra!
+
+Se lo desiderate, potete sostenermi in diversi modi:
+
+### Donazione singola:
+
+<details><summary><b> BuyMeACoffee </b></summary>
+
+<a href="https://www.buymeacoffee.com/ololiuhqui" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" style="height: auto ;width: 150px;" ></a>
+
+</details>
+<br>
+<details><summary><b> Bitcoin (BTC) </b></summary>
+
+```
+bc1q26f4gscc5ksujdx6wzxfnlqeqt02p3sjcqwvln
+```
+
+![btc-bc1q26f4gscc5ksujdx6wzxfnlqeqt02p3sjcqwvln](https://raw.githubusercontent.com/ololiuhqui/magnolia-free-hugo-theme/main/images/.readme_images/bitcoin-qr.png)
+
+</details>
+
+### Donazione Ricorrente:
+
+<details><summary><b> LiberaPay </b></summary>
+
+<a href="https://liberapay.com/ololiuhqui/donate"><img alt="Donate using Liberapay" src="https://liberapay.com/assets/widgets/donate.svg"></a>
+
+</details>
+<br/>
+<details><summary><b> GitHub Sponsors </b></summary>
+<a href="https://github.com/ololiuhqui/magnolia-free-hugo-theme">Github Repo</a>
+
+</details>

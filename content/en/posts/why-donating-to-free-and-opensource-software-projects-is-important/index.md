@@ -58,3 +58,45 @@ promote openness without succumbing to selﬁshness._
 The people on the other side of the screen spent time and energy on the things we read and watch. When we insist on consuming it for free, we are pushing them toward something much closer to the broadcast television model, where ads fund everything. We already know what that does for the quality of news and entertainment. Yet this is precisely the model that the ad-based hosts and search engines are pushing for. By encouraging us to devalue and deprofessionalize our work, these companies guarantee a mediaspace where only they get paid. They devalue the potential of the network itself to createvalue in new ways. It’s just like free TV, except the writers and actors don’t receive any income. Instead, they just pay for the equipment to create and for access to the servers they don’t own.
 
 **[From Douglas Rushkoff - Program or Be Programmed](https://rushkoff.com/)**
+
+## Remunerate my time and energy 💫
+
+![Liberapay receiving](https://img.shields.io/liberapay/receives/ololiuhqui)
+![GitHub Sponsors](https://img.shields.io/github/sponsors/ololiuhqui)
+
+Designing this theme and making it available for you took a lot of time and effort.
+
+The MIT license means that you are completely free to do whatevere you want with this theme, even [make money from it!](https://opensource.org/license/MIT) With the only obligation to include the attribution!
+
+If you wish you can support me in several ways:
+
+### Single donation:
+
+<details><summary><b> BuyMeACoffee </b></summary>
+
+<a href="https://www.buymeacoffee.com/ololiuhqui" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" style="height: auto ;width: 150px;" ></a>
+
+</details>
+<br>
+<details><summary><b> Bitcoin (BTC) </b></summary>
+
+```
+bc1q26f4gscc5ksujdx6wzxfnlqeqt02p3sjcqwvln
+```
+
+![btc-bc1q26f4gscc5ksujdx6wzxfnlqeqt02p3sjcqwvln](https://raw.githubusercontent.com/ololiuhqui/magnolia-free-hugo-theme/main/images/.readme_images/bitcoin-qr.png)
+
+</details>
+
+### Recurring donations:
+
+<details><summary><b> LiberaPay </b></summary>
+
+<a href="https://liberapay.com/ololiuhqui/donate"><img alt="Donate using Liberapay" src="https://liberapay.com/assets/widgets/donate.svg"></a>
+
+</details>
+<br/>
+<details><summary><b> GitHub Sponsors </b></summary>
+<a href="https://github.com/ololiuhqui/magnolia-free-hugo-theme">Github Repo</a>
+
+</details>
