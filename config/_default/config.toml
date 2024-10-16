@@ -6,7 +6,7 @@ defaultContentLanguage = 'en'
 enableRobotsTXT = true
 theme = "Magnolia"
 googleAnalytics = ""
-#TODO->fix head
+
 #  BLOG  #
 [taxonomies]
 # Delete line below to remove tags rendering
