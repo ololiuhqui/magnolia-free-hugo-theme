@@ -6,7 +6,7 @@ defaultContentLanguage = 'en'
 enableRobotsTXT = true
 theme = "Magnolia"
 googleAnalytics = ""
-
+#TODO->fix head
 #  BLOG  #
 [taxonomies]
 # Delete line below to remove tags rendering
@@ -17,11 +17,14 @@ tag = "tags"
     [[module.mounts]]
       source = "node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"
       target = "assets/js/bootstrap.bundle.min.js"
+    [[module.mounts]]
+      source="themes/Magnolia/static/img"
+      target="assets/img"
       [[module.mounts]]
       source = 'assets'
       target = 'assets'
   
-    
+# To render some markdown otherwise unrendered
 [markup]
   [markup.goldmark]
     [markup.goldmark.renderer]
