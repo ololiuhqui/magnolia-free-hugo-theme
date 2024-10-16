@@ -135,6 +135,10 @@ Look at what this theme is capable to do on the features page, and see a beautif
 [params.notfound]
   title = "404, page not found" # text for 404 page
 
+[params.single] # for posts pages (visible only if posts are rendered)
+  similarContent= "Similar Content"
+  toc= "Table of Contents"
+
 [menus]
 # PageRef should refer to the "translationKey" in `/content/<page>` frontmatter, names can be changed freely
   [[menus.main]]

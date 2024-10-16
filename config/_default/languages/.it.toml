@@ -127,6 +127,10 @@ Guardate cosa è in grado di fare questo tema nella pagina delle caratteristiche
 [params.notfound]
   title = "404, page not found"
 
+[params.single] # for posts pages (visible only if posts are rendered)
+  similarContent= "Contenuti Simili"
+  toc= "Indice"
+
 [menus]
   [[menus.main]]
   name = "Home"
