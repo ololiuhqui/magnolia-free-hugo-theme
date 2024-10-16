@@ -23,6 +23,12 @@ tag = "tags"
       [[module.mounts]]
       source = 'assets'
       target = 'assets'
+  # Prints warning if hugo version is too old
+  [module.hugoVersion]
+    extended = false
+    min = '0.129.0'
+
+
   
 # To render some markdown otherwise unrendered
 [markup]
