@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   {{- partial "head.html" . -}}
-  <body class="background-image">
+  <body class="background-image" style="background-image: url('{{resources.GetMatch "img/background.*"}}')">
     {{- partial "header.html" . -}}
     <div id="content">
       <main class="p-2 p-lg-5 container">{{- block "main" .}} {{- end }}</main>
