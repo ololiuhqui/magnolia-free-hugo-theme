@@ -4,7 +4,6 @@ The site structure is shown below:
 
 ```
 ├── assets
-│   ├── js
 │   └── scss
 │       ├── custom.scss
 │       ├── custom-variables.scss
@@ -15,19 +14,17 @@ The site structure is shown below:
 │       └── languages
 ├── content
 │   ├── en
-│   │   ├── 404.html
-│   │   ├── contacts.html
-│   │   ├── _index.html
-│   │   ├── office
+│   │   ├── _index.md
+│   │   ├── pages
+│   │   ├── posts
 │   │   ├── profile.webp
-│   │   └── services.html
+│   │   └── tags
 │   └── it
-│       ├── 404.html
-│       ├── contacts.html
-│       ├── _index.html
-│       ├── office
+│       ├── _index.md
+│       ├── pages
+│       ├── posts
 │       ├── profile.webp
-│       └── services.html
+│       └── tags
 └── themes
     └── Magnolia
 ```
