@@ -10,6 +10,9 @@ translationKey: more-flowers
 draft:
 type: # This is here for future possible development, you can leave it blank
 layout: 'single'
+Params:
+  imageAttribution: 'Photo di <a href="https://unsplash.com/it/@elmuff?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Sandra Grünewald</a> su <a href="https://unsplash.com/it/foto/fiori-rosa-sul-ramo-dellalbero-5qZzzFnG1qw?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
+  ' # Set an attribution to the author of the picture you're using for the post
 ---
 
 ```
