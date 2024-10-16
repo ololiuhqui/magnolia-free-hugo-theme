@@ -9,7 +9,7 @@ homepage = "https://github.com/ololiuhqui/magnolia-free-hugo-theme"
 # If you have a running demo of the theme.
 demosite = "https://ololiuhqui.github.io/magnolia-free-hugo-theme/en/"
 
-tags = ["personal", "company", "multilingual", "light", "Landing", "Bootstrap"]
+tags = ["personal", "company", "blog", "multilingual", "light", "Landing", "Bootstrap"]
 features = ["Responsive", "Modular", "Customizable", "SEO ready", "Google Analytics supported"]
 
 # # If the theme has multiple authors
