@@ -1,22 +1,23 @@
 disabled = false
 languageCode = 'it-IT'
 languageName = 'Italiano'
-title = 'Magnolia' # This will go in the Header as well
-copyright = "Designed by Ludovico Caluori 🎨" # Please leave this here to give me some credit for my work, or BuyMeACoffee and change or remove the copyrightlink below :)
-contentDir = "content/it"
+title = 'Magnolia' 
+copyright = """Designed with [Hugo](https://gohugo.io/) by [Ludovico Caluori](https://github.com/ololiuhqui) 🎨 \n
+ Licensed under [MIT license](https://github.com/ololiuhqui/magnolia-free-hugo-theme/blob/main/LICENSE.md) 📄"""
+contentDir="content/it"
 
-# Change single params to false to remove from rendering
+# BLOG MODE
+# Uncomment if you want to disable all posts and taxonomies rendering and indexing
+#ignoreFiles= 'posts/*'
+
 [params]
-  subtitle = "Free Hugo theme" # This goes in the header and in the site title
-  copyrightLink = "https://github.com/ololiuhqui"
-  # PAGES
+  subtitle = "Free Hugo theme" 
+
+# PAGES
+
   [params.homepage]
-    # Notice that SEO meta tags (what appears in google search results) can be set
-    # in individual pages frontmatters `/content/<page>`
-    ###
     preTitle = 'Free Hugo theme'
     title = "Magnolia"
-    # You can use some markdown safely here as long as you don't include line breaks
     intro= """
 ### "La libertà ci rende esseri umani migliori e ci fa migliorare più velocemente il nostro status di razza collettiva ".
 ___
@@ -30,81 +31,26 @@ Qui c'è la [pagina github del tema](https://github.com/ololiuhqui/magnolia-free
 Guardate cosa è in grado di fare questo tema nella pagina delle caratteristiche e vedete un bellissimo esempio di pagina dei contatti qui sotto.
         """
     mainButton = "Caratteristiche"
-    mainButtonRef = "caratteristiche" # Just write the name or slug of the page here
+    mainButtonRef = "caratteristiche"
     secondButton = "Contatti"
-    secondButtonRef = "contatti" # Just write the name of the pages here
-    [params.homepage.description]
-    enabled = true
-    secondTitle = "Come usare questo tema"
-    paragraph = """ #### Avvio rapido: come si installa 📥
-
-1. Installate hugo extended, seguendo [la guida ufficiale all'installazione](https://gohugo.io/installation/). Per l'utilizzo di questo tema non è necessario eseguire `hugo new site`, in quanto si clonerà un sito di esempio nel passaggio 2.
-
-2. Clonate il sito di esempio e il tema dal repo: `git init && git clone -b exampleSite --recurse-submodules https://github.com/ololiuhqui/magnolia-free-hugo-theme *YourSiteName*` (cambiate *YourSiteName* nel comando con il nome che volete dare al vostro sito).
-
-3. Cancellare il file `config.toml` predefinito dalla cartella principale del sito; le nuove configurazioni si troveranno in `config/_default`. Il file di configurazione principale è `config/_default/config.toml`, ma la maggior parte delle variabili sono sovrascritte o definite dai file di configurazione delle singole lingue (per esempio, `config/_default/languages/.en.toml`).
-
-4. Spostarsi nella directory del sito e vedere l'anteprima del sito con `hugo serve -D`.
-
-#### Come aggiornare ♻
-
-- Dalla directory principale del vostro sito web eseguite: `git submodule update --remote --merge`.
-
-#### Come personalizzare 🎨
-
-- Utilizzare la tavolozza di colori preferita modificando le variabili di Bootstrap in `assets/scss/custom-variables.scss`.
-
-- Modificare i file di configurazione in `/config/_default` e `/config/_default/languages` aggiungendo i propri elementi alle pagine. È possibile cambiare anche i nomi delle pagine.
-
-- Modificare i nomi delle pagine, gli slug e le metadescrizioni in `content/*language*/*page*.html`. Il file `_index.html` nella radice di ogni cartella della lingua dei contenuti è la homepage, si veda [Organizzazione dei contenuti | Hugo](https://gohugo.io/content-management/organization/).
-
-- Cambiare le immagini del sito web dalle cartelle `static` o `content` (alcune pagine usano [Page bundles](https://gohugo.io/content-management/page-bundles/)); si noti che il nome e il formato delle immagini devono essere gli stessi di quelli attualmente presenti nel sito di esempio (che è stato clonato nel passo 2 della guida "come installare").
-
-#### Aggiungere nuove lingue 🚩
-
-1. Andare a `config/_default/languages`.
-
-2. Duplicare uno dei file di lingua, cambiare il tag della lingua e il nome del file (en, it, fr ecc.): questo dovrebbe essere conforme a [RFC 5646](https://gohugo.io/content-management/multilingual/). Per una configurazione più rapida, utilizzare [RFC 5646 Language Tags List](https://gist.github.com/msikma/8912e62ed866778ff8cd).
-
-3. Tradurre i valori delle variabili all'interno del file `.toml` in base alla lingua.
-
-4. Nella cartella `/content`, duplicare una delle cartelle delle lingue e modificarne il nome in base alla nuova lingua, come indicato al punto 2.
-
-5. Per ogni file `.html` in `/content`, è possibile modificare liberamente `title` e `slug`. La `translationKey` deve rimanere intatta.
-
-6. Si consiglia vivamente di aggiornare anche il SEO nel frontmatter nella nuova lingua.
-
-#### Pagina 404 personalizzata ❓
-
-Per aggiungere la pagina 404 personalizzata e farla funzionare su pagine github o altri host, dovrete aggiungerla manualmente durante la costruzione del sito eseguendo `hugo`. Questo perché github pages cerca un modello 404 nella cartella principale del progetto, quindi è possibile avere una sola pagina 404 per tutte le lingue. Per creare un link simbolico alla versione 404 inglese, che sarà poi usata come 404 predefinita una volta ospitata, dopo aver eseguito `hugo` eseguire `ln -s public/en/404/index.html public/404.html`.
-
-#### Remunera il mio tempo e le mie energie 💫
-
-![Ricezione Liberapay](https://img.shields.io/liberapay/receives/ololiuhqui)
-![Sponsor GitHub](https://img.shields.io/github/sponsors/ololiuhqui)
-
-Progettare questo tema e renderlo disponibile per voi ha richiesto molto tempo e impegno.
-
-La licenza MIT significa che siete completamente liberi di fare tutto ciò che volete con questo tema, anche [guadagnarci sopra!](https://opensource.org/license/MIT)
-
-Se lo desiderate, potete sostenermi in diversi modi, [vedeteli su Github](https://github.com/ololiuhqui/magnolia-free-hugo-theme?tab=readme-ov-file#remunerate-my-time-and-energy-)
-        """
-    paragraph2= "" #You can use markdown to define your first paragraph look, but in case this isn't enough, here there's a secoind paragraph
-
+    secondButtonRef = "contatti" 
+    
+    blogTitle = "Storie interessanti"
+    blogButton= "More Stories"
 
 [params.office]
   title = "Uffici"
  description = "Questa pagina può essere facilmente personalizzata con l'aggiunta di un link a Google Maps per ottenere indicazioni stradali verso il luogo dell'attività."
  buttonText = "Indicazioni" 
- buttonLink = "https://maps.app.goo.gl/LzsPzRkTYSZ8SF3y8" # google maps "share" link here (for button)
+ buttonLink = "https://maps.app.goo.gl/LzsPzRkTYSZ8SF3y8" 
  mapLink = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d382266.44569392945!2d-76.55832397784323!3d41.53770983690751!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c4d93a77484bbb%3A0xfff27920ab9bfae8!2sScranton%2C%20Pennsylvania%2C%20Stati%20Uniti!5e0!3m2!1sit!2sit!4v1716459350324!5m2!1sit!2sit" # google maps "embed" link here
 
 [params.contacts]
   title = "Contattaci!"
   formCallToAction = "Questa è una pagina di esempio \"contattaci\"; è possibile ricevere le risposte dei moduli su FormSpree (gratis)."
-  socialCallToAction = "Puoi aggiungere i tuoi link ai social media qui sotto!" # These are the same as in [params.social]
+  socialCallToAction = "Puoi aggiungere i tuoi link ai social media qui sotto!" 
   [params.contacts.form]
-    formspreeLink = "https://yourformspreelink.com" #subscribe to formspree and add the link for the form here
+    formspreeLink = "https://yourformspreelink.com"
     firstname = "Nome*"
     lastname = "Cognome*"
     email = "E-mail*"
@@ -117,7 +63,6 @@ Se lo desiderate, potete sostenermi in diversi modi, [vedeteli su Github](https:
   description = """ Ho costruito questo tema pensando alla semplicità: è piccolo e facilmente personalizzabile, reattivo, modulare e multilingue. Ma lascia anche spazio ad ulteriori personalizzazioni approfondite, poiché utilizza Bootstrap e SCSS.
   Questa pagina mostra anche un esempio di come si possono cambiare i nomi delle pagine del sito: Il sito utilizzerà il layout `services.html`, ma la pagina si chiamerà "Caratteristiche" e il link userà il relative permalink `/caratteristiche`."""
   [params.services.list]
-    # You can add as much params.services.list.<N> as you like
     [params.services.list.0]
       title= "Responsività"
       description= "Il tema è completamente reattivo e si visualizza perfettamente su ogni dimensione dello schermo."
@@ -140,12 +85,8 @@ Se lo desiderate, potete sostenermi in diversi modi, [vedeteli su Github](https:
       title = "Google Maps Incluso"
       description= "La pagina dei contatti può essere facilmente personalizzata con l'aggiunta di un link a Google Maps per ottenere indicazioni stradali verso la sede dell'attività."
 
-
-  
-# /. PAGES
-
 [params.socials]
-  enabled = true # enables/disables the whole social section in the footer
+  enabled = true 
   callToAction= "Connettiti con noi sui social media >"
       [[params.socials.link]]
         name = "github"
@@ -156,16 +97,12 @@ Se lo desiderate, potete sostenermi in diversi modi, [vedeteli su Github](https:
       [[params.socials.link]]
         name = "whatsapp"
         link = ""
-      # You can add other socials here by copypasting the above section and
-      # selecting the right name for the icon from here https://icons.getbootstrap.com/
 
-[params.schedules] # Time schedules (eg. your office openming hours)
-  enabledFooter = false # This will add the schedules on the footer too
-  enabledContacts = true # This will add the schedule to the contact page
-  title = "Office hours" # For contacts page only
+[params.schedules]
+  enabledFooter = false 
+  enabledContacts = true 
+  title = "Office hours"
   [params.schedules.days]
-  # Use something like "Monday: 9-13" for each day
-  # if left empty it is disabled (default)
     day1 = "Lunedì: 9:00 – 19:00"
     day2 = "Martedì: 9:00 – 19:00"
     day3 = "Mercoledì: 9:00 – 19:00"
@@ -180,7 +117,7 @@ Se lo desiderate, potete sostenermi in diversi modi, [vedeteli su Github](https:
   [params.footer.navigate]
   heading = "Naviga"   
   [params.footer.contacts]
-  enabled = true # enables/disables the whole contacts section in footer
+  enabled = true 
   heading = "Contatti"
   address = "Scranton 2865 Pouros Corners 55441-0788"
   mail = "dundermifflin@fakemail.com"
@@ -188,23 +125,26 @@ Se lo desiderate, potete sostenermi in diversi modi, [vedeteli su Github](https:
   phone = "+00 0000000"
   
 [params.notfound]
-  title = "404, page not found" # text for 404 page
+  title = "404, page not found"
+
+[params.single] # for posts pages (visible only if posts are rendered)
+  similarContent= "Contenuti Simili"
+  toc= "Indice"
 
 [menus]
-# PageRef should refer to the "translationKey" in `/content/<page>` frontmatter, names can be changed freely
   [[menus.main]]
   name = "Home"
   pageRef = "/"
   weight = 1
   [[menus.main]]
   name = "caratteristiche"
-  pageRef = "/services"
+  pageRef = "pages/services"
   weight = 2
   [[menus.main]]
   name = "Uffici"
-  pageRef = "/office"
+  pageRef = "pages/office"
   weight = 3
   [[menus.main]]
   name = "Contatti"
-  pageRef = "/contacts"
+  pageRef = "pages/contacts"
   weight = 4

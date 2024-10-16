@@ -1,0 +1,9 @@
+{
+  "devDependencies": {
+    "bootstrap": "^5.3.3",
+    "bootstrap-icons": "^1.11.3",
+    "font-awesome": "^4.7.0",
+    "prettier": "^3.3.3",
+    "prettier-plugin-go-template": "^0.0.15"
+  }
+}

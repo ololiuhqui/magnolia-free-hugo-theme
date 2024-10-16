@@ -2,12 +2,17 @@ baseURL = 'https://example.com'
 languageCode = ''
 title = 'Magnolia Default' # This can get overwritten by the single language files
 defaultContentLanguage = 'en'
-defaultContentLanguageInSubDir = true
+# defaultContentLanguageInSubDir = true
 enableRobotsTXT = true
-disableKinds = ["taxonomy", "term"] # This disables categories and tags and removes them from sitemap as they are not used
 theme = "Magnolia"
 googleAnalytics = ""
 
+#  BLOG  #
+[taxonomies]
+# Delete line below to remove tags rendering
+tag = "tags"
+
+# Developer area
 [module]
     [[module.mounts]]
       source = "node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"
@@ -15,3 +20,15 @@ googleAnalytics = ""
       [[module.mounts]]
       source = 'assets'
       target = 'assets'
+  # Prints warning if hugo version is too old
+  [module.hugoVersion]
+    extended = false
+    min = '0.129.0'
+
+
+  
+# To render some markdown otherwise unrendered
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
