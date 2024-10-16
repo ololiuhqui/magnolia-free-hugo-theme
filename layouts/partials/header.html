@@ -1,5 +1,5 @@
 <!-- Navigation-->
-<header class="shadow-sm sticky-top">
+<header class="shadow-sm sticky-lg-top" style="z-index: 10000;">
   <nav class="navbar navbar-expand-lg navbar-light py-3">
     <div class="container px-5">
       <a class="navbar-brand" href="{{ absLangURL "" }}"
@@ -33,6 +33,7 @@
           {{ end }}
           <li class="vr ms-1 d-none d-lg-block"></li>
           {{ if hugo.IsMultilingual}}
+          {{if .IsTranslated}}
           <li class="nav-item dropdown">
             <a
               class="nav-link nav-trad dropdown-toggle d-flex align-items-center justify-content-center"
@@ -49,7 +50,7 @@
             </a>
 
             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              {{ if .IsTranslated }}
+              
               
               {{ range .Translations }}
               

@@ -15,7 +15,7 @@
 
 I decided to give my personal _thank you_ to the Hugo developers and community by making this theme available for everyone.
 
-This theme is actually very "hugo noob" friendly, as it provides an **example site** to be used with the latest version of the theme, the main pages are there to be used as they are, with all the params already in the config files. you can customize the color palette and some of the pages images, but everything else is just a matter of modifying variables into a single _.toml_ file. This theme also aims to be well documented in order to be accessible even from a complete stranger and make your site run asap.
+This theme is actually very "hugo noob" friendly, as it provides an **example site** to be used with the latest version of the theme, the main pages are there to be used as they are, with most of the params already in the config files. you can customize the color palette and some of the pages images. This theme also aims to be well documented in order to be accessible even from a complete stranger and make your site run asap.
 
 I strongly value the open source community as in these years i've been using many open source projects that made my life better and improved my digital freedom in many ways.
 
@@ -26,7 +26,7 @@ Freedom makes us better humans, and makes us improve our status faster and in an
 ## Features ⚡
 
 I built this theme with simplicity in mind, it is small and easily customizable, responsive, modular and multilingual. But it also leaves some space to further in-depth customization since it uses **Bootstrap** and **SCSS**.
-This theme is thought to be used as a personal / business theme, it can provide a great landing page for your activity!
+This theme is thought to be used as a personal / business theme, it can provide a great landing page or blog for your activity!
 
 ### 1. Responsive
 
@@ -51,7 +51,7 @@ These are the currently customizable sections:
 
 ### 5. SEO ready
 
-- Every page has an easily customizable meta description and a unique meta title for better and easier indexing. The theme will use the image `static/img/meta-image` as meta image for Google, Facebook and Twitter.
+- Every page has an easily customizable meta description and a unique meta title for better and easier indexing. Each post has the option of adding a featured image, and, if not found, `assets/img/meta-image` will be used instead as meta image for Google, Facebook and Twitter. All pages that do not have a featured image will have the `meta-image` by default (eg. homepage, office etc).
   There is a `robots.txt` file which indicates the correct location of the sitemap index for faster indexing.
 
 ### 6. Google Analytics supported
@@ -61,6 +61,10 @@ These are the currently customizable sections:
 ### 7. Google Maps included
 
 - The contact page can be easily customized by adding a google maps link to get directions towards your activity location.
+
+### 8. Ready to Blog
+
+- The theme provides some archetypes and a simple directory structure, you can publish articles/posts in more languages, set a publish date, a featured image, an expiration date and tag your posts. You can create and translate custom tags. Latest posts will appear in the homepage, every tag will have its own list page, and every post will show a list of latest related posts based on tagging. If you include titles in your posts, they will be automatically rendered in a table of contents. SEO is carefully taken care of for posts as well.
 
 ## Quick start: how to install 📥
 
@@ -82,9 +86,67 @@ These are the currently customizable sections:
 
 - Change the config files in `/config/_default` and `/config/_default/languages` adding your own elements to the pages. You can change the page names there as well.
 
-- Change the pages names, slugs and metadescriptions in `content/<language>/<page>.html`. The `_index.html` in the root of every content language folder is the homepage, refer to [Content organization | Hugo](https://gohugo.io/content-management/organization/).
+- Edit the homepage content in `content/<language>/pages/_index.html`, markdown supported.
 
-- Change the images of the website from the `static` or `content` folders (some pages use [Page bundles](https://gohugo.io/content-management/page-bundles/)), please notice that the name and the format of the images should be the same of the ones currently present in the exampleSite (that you cloned in step 2 of "how to install" guide).
+- Edit pages names, slugs and metadescriptions in `content/<language>/pages/<page>/index.html`.
+
+- Change the images of the website from the `content/<language>/pages/<page>/<image>` folders (pages and posts use [Page bundles](https://gohugo.io/content-management/page-bundles/)).
+
+## How to manage posts ✏️
+
+The `/content` folder contains different types of content, the content folder structure mimicts the site structure.
+
+```
+content
+├── en
+│   ├── _index.md
+│   ├── pages
+│   ├── posts
+│   ├── profile.webp
+│   └── tags
+└── it
+    ├── _index.md
+    ├── pages
+    ├── posts
+    ├── profile.webp
+    └── tags
+```
+
+For each language, you will find yourself in front of the homepage `_index.md` and the image used for the homepage presentation section (`profile.webp`). The other directories will contain exactly what you expect.
+
+`pages`= normal website pages (office, services etc).
+`posts`= your posts.
+`tags` = custom tags.
+
+### Posts
+
+- Create a new post with: `hugo new --kind post-bundle content/<lang>/posts/<post-name>`. This will be its very simple structure:
+
+```
+content/en/posts
+├── a-poem-about-flowers
+│   ├── images
+│   │   └── featured.jpg
+│   └── index.md
+```
+
+- Edit the metadata in `index.md` and add your post content below.
+
+- Add a post featured image by subsituting the `featured.webp` placeholder in `/images`. The featured image has to be called "featured" but can be of any extension. If you wish you can remove the placeholder to have a text-only post.
+
+### Tags
+
+1. One option is to automatically create tags by adding them to posts frontmatters.
+
+2. The second option is to create a new tag with: `hugo new --kind tag content/<lang>/tags/<tag-name>`. Creating tags this way will allow for a finer manipulation, you can translate tags here by giving the same translationKey in frontmatter in every different language. Hence having your posts sorted the same for each language and have tag pages translations available.
+
+```
+content/en/tags
+├── flowers
+│   └── _index.md
+```
+
+For more on content organization refefer to [Content organization | Hugo](https://gohugo.io/content-management/organization/).
 
 ## Add new languages 🚩
 
@@ -92,12 +154,12 @@ These are the currently customizable sections:
 2. Duplicate one of the language files, change the language tag, name of the file (en, it, fr etc): this should be compliant with [RFC 5646](https://gohugo.io/content-management/multilingual/). Use the [RFC 5646 Language Tags List](https://gist.github.com/msikma/8912e62ed866778ff8cd) for a quicker setup.
 3. Translate the variables values inside the `.toml` file accordingly to the language.
 4. In the `/content` directory, duplicate one of the language folders and change the name accordingly to your new language as in step 2.
-5. For each of the `.html` file in `/content`, you can change `title` and `slug` freely. `translationKey` should remain untouched.
-6. I strongly suggest you to update the SEO in the frontmatter as well in your new language.
+5. For each of the `.html` file in `/content/pages`, you can change `title` and `slug` freely. `translationKey` should remain untouched or should be changed in every language page file. I strongly suggest you to translate the SEO here as well.
+6. For each of the `.md` files in `content/posts/<my-post>` translate the content and the frontmatter values you need (eg. _summary_).
 
 ## Custom 404 page
 
-To add the custom 404 page and make it work on github pages or other hostings, you will have to add it manually when building the site executing `hugo`. This is because github pages looks for a 404 template in the root directory of the project, you can therefore only have one single 404 page for all the languages. To create a symlink to the english 404 version, which will then be used as default 404 once hosting, after running `hugo` run `ln -s public/en/404/index.html public/404.html`.
+To add the custom 404 page and make it work on github pages, you will have to add it manually when building the site executing `hugo`. This is because github pages looks for a 404 template in the root directory of the project, you can therefore only have one single 404 page for all the languages. To create a symlink to the english 404 version, which will then be used as default 404 once hosting, after running `hugo` run `ln -s public/en/404/index.html public/404.html`.
 
 ## Remunerate my time and energy 💫
 
@@ -106,7 +168,7 @@ To add the custom 404 page and make it work on github pages or other hostings, y
 
 Designing this theme and making it available for you took a lot of time and effort.
 
-The MIT license means that you are completely free to do whatevere you want with this theme, even [make money from it!](https://opensource.org/license/MIT)
+The MIT license means that you are completely free to do whatevere you want with this theme, even [make money from it!](https://opensource.org/license/MIT) With the only obligation to include the attribution!
 
 If you wish you can support me in several ways:
 
@@ -134,7 +196,10 @@ bc1q26f4gscc5ksujdx6wzxfnlqeqt02p3sjcqwvln
 
 <a href="https://liberapay.com/ololiuhqui/donate"><img alt="Donate using Liberapay" src="https://liberapay.com/assets/widgets/donate.svg"></a>
 
-Or GitHub sponsors
+</details>
+
+<details><summary><b> GitHub Sponsors </b></summary>
+<a href="https://github.com/ololiuhqui/magnolia-free-hugo-theme">Github Repo</a>
 
 </details>
 
@@ -156,18 +221,6 @@ As an alternative you can also clone the **exampleSite** with the `recurse-submo
 |             | theme as submodule (main) |
 
 ### Things that should be probably added to this theme
-
-#### Add a blog functionality
-
-Currently the theme doesn't properly support a blog functionality: you can add as many pages as you want but they do not appear anywhere in the site unless you share the direct link.
-
-This is because the theme is thought to host a very simple landing website. It might be cool to include an optional blog feature though.
-
-Some layout would need to be redesigned to include posts.
-
-A very simple _single_ layout is already included. A _list_ layout is lacking.
-
-Some taxonomies are disabled in `config.toml` to avoid indexing of empty pages, these would need to be re-enabled for making use of tags and categories.
 
 #### Add proper Bootstrap theming
 

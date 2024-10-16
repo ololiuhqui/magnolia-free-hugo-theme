@@ -116,13 +116,8 @@
   <!-- Section: Links  -->
 
   <!-- Copyright -->
-  <div class="copyright text-light py-2 text-center">
-    <a
-      class="my-1 fs-6 text-muted"
-      target="_blank"
-      href="{{.Site.Params.copyrightLink}}"
-      >{{ .Site.Copyright}}</a
-    >
+  <div class="copyright py-2 text-center">
+    <p class="my-1 fs-6 text-muted">{{ .Site.Copyright | markdownify}}</p>
   </div>
 
   <!-- Copyright -->

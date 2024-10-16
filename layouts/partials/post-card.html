@@ -1,0 +1,44 @@
+<!-- Takes a page and returns it as a card -->
+
+  <div class="col-12 col-md-6 ">
+    <div class="card p-0 bg-secondary shadow-sm border-none h-100" >
+        <div class="row h-100" >
+          {{ with .Resources.GetMatch "images/featured*" }}
+          <div class="col-4 h-100 ">
+            <div class="position-relative h-100">
+              <img
+              class="card-img h-100 w-100 object-fit-cover "
+              src="{{ .RelPermalink }}"
+              alt="post image (replace in `content` or remove it)"
+            />
+            <div class="h-100 w-100 position-absolute top-0 left-0 dark-overlay bg-dark"></div>
+            </div>
+              
+          </div>
+          {{end}}
+          <div class="col h-100">
+            <div class="card-body h-100 d-flex flex-column  justify-content-between">
+              <div>
+                <h5 class="card-title">
+                  <a href="{{.RelPermalink}}">{{.Title}}</a>
+                  
+                </h5>
+                <p class="card-text my-0"><small class="text-body-secondary">{{.Date | time.Format "2 January , 2006"}}</small></p>
+                {{with .GetTerms "tags"}}
+                {{range first 3 .}}
+                <a href="{{.RelPermalink}}" class="btn btn-sm btn-secondary border-primary mb-2">{{.Title}}</a>
+                {{end}}
+                {{end}}
+              </div>
+              <p class="card-text d-none d-lg-block">{{.Summary}}</p>
+              <div>
+                <p class="card-text"></p>
+                <small class="">{{.ReadingTime}} minutes read</small>
+              </p>
+              <a href="{{.RelPermalink}}" class="btn btn-primary">Read More</a>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>    
+</div>
