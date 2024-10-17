@@ -15,7 +15,7 @@
 
 I decided to give my personal _thank you_ to the Hugo developers and community by making this theme available for everyone.
 
-This theme is actually very "hugo noob" friendly, as it provides an **example site** to be used with the latest version of the theme, the main pages are there to be used as they are, with most of the params already in the config files. you can customize the color palette and some of the pages images. This theme also aims to be well documented in order to be accessible even from a complete stranger and make your site run asap.
+This theme is actually very "hugo noob" friendly, as it provides an **example site** to be used with the latest version of the theme, the main pages are there to be used as they are, with most of the params already in the config files. you can customize the color palette and some of the pages images. This theme also aims to be _very well documented_ in order to be accessible even from a complete stranger and make your site run asap.
 
 I strongly value the open source community as in these years i've been using many open source projects that made my life better and improved my digital freedom in many ways.
 
@@ -64,7 +64,7 @@ These are the currently customizable sections:
 
 ### 8. Ready to Blog
 
-- The theme provides some archetypes and a simple directory structure, you can publish articles/posts in more languages, set a publish date, a featured image, an expiration date and tag your posts. You can create and translate custom tags. Latest posts will appear in the homepage, every tag will have its own list page, and every post will show a list of latest related posts based on tagging. If you include titles in your posts, they will be automatically rendered in a table of contents. SEO is carefully taken care of for posts as well.
+- The theme provides some archetypes and a simple directory structure, you can publish articles/posts in more languages, set a publish date, a featured image, an expiration date and tag your posts. You can create and translate custom tags. Latest posts will appear in the homepage, every tag will have its own list page, and every post will show a list of latest related posts based on tagging. If you include titles in your posts, they will be automatically rendered in a table of contents. SEO is carefully taken care of for posts as well. **You can also disable the blog part of the theme entirely if you don't need it!**
 
 ## Quick start: how to install 📥
 
@@ -92,9 +92,24 @@ These are the currently customizable sections:
 
 - Change the images of the website from the `content/<language>/pages/<page>/<image>` folders (pages and posts use [Page bundles](https://gohugo.io/content-management/page-bundles/)).
 
+- Add your own favicon, background and default meta-image (the image used in SEO) in `assets/img`. These files can be of any extension but must have the same name of the ones currently in the example site assets directory.
+
 ## How to manage posts ✏️
 
-The `/content` folder contains different types of content, the content folder structure mimicts the site structure.
+### Enable/Disable Blog
+
+_Wait, you told me this theme was noob friendly, I don't wanna deal with all the blog stuff!_
+
+_I need a simple landing page and all this blog feature is something I don't care about!_
+
+**If you don't need posts you can disable the blog part of the theme entirely from within the config files and just use Magnolia as a simple landing site.**
+
+- To disable _tags only_ rendering and indexing for the entire site -> `config.toml` uncomment `#disableKinds = ['taxonomy', 'term']`.
+- To disable _post and tags_ rendering and indexing for the entire site -> `config.toml` uncomment `#disableKinds = ['taxonomy', 'term']` and `#ignoreFiles= ['posts/*']`.
+
+### Content organization
+
+The `/content` folder contains different types of content, the content organization mimicts the site structure.
 
 ```
 content
@@ -115,10 +130,10 @@ content
 For each language, you will find yourself in front of the homepage `_index.md` and the image used for the homepage presentation section (`profile.webp`). The other directories will contain exactly what you expect.
 
 `pages`= normal website pages (office, services etc).
-`posts`= your posts.
+`posts`= site posts.
 `tags` = custom tags.
 
-### Posts
+#### Posts
 
 - Create a new post with: `hugo new --kind post-bundle content/<lang>/posts/<post-name>`. This will be its very simple structure:
 
@@ -134,7 +149,7 @@ content/en/posts
 
 - Add a post featured image by subsituting the `featured.webp` placeholder in `/images`. The featured image has to be called "featured" but can be of any extension. If you wish you can remove the placeholder to have a text-only post.
 
-### Tags
+#### Tags
 
 1. One option is to automatically create tags by adding them to posts frontmatters.
 
