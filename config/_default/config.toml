@@ -7,12 +7,16 @@ enableRobotsTXT = true
 theme = "Magnolia"
 googleAnalytics = ""
 
-#  BLOG  #
-[taxonomies]
-# Delete line below to remove tags rendering
-tag = "tags"
+# BLOG
+# Uncomment if you want to disable all posts and tags rendering and indexing
+#ignoreFiles= ['posts/*']
+#disableKinds = ['taxonomy', 'term']
 
 # Developer area
+
+[taxonomies]
+tag = "tags"
+
 [module]
     [[module.mounts]]
       source = "node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"

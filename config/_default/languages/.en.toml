@@ -6,11 +6,8 @@ copyright = """Designed with [Hugo](https://gohugo.io/) by [Ludovico Caluori](ht
  Licensed under [MIT license](https://github.com/ololiuhqui/magnolia-free-hugo-theme/blob/main/LICENSE.md) 📄""" # Please leave this here to give me and the tools i used some credit for the work, or BuyMeACoffee and change or remove the copyrightlink below :)
 contentDir = "content/en"
 
-# BLOG MODE
-# Uncomment if you want to disable all posts and taxonomies rendering and indexing
-#ignoreFiles= 'posts/*'
 
-# Change single params to false to remove from rendering
+# Change single params to "false" to remove from rendering
 [params]
   subtitle = "Free Hugo theme" # This goes in the header and in the site title
   # PAGES
