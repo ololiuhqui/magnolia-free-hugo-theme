@@ -6,7 +6,7 @@ draft: false
 
 <h1 style="text-align: center;">How to use this theme</h1>
 
-### Quick start: how to install 📥
+## Quick start: how to install 📥
 
 1. Install hugo extended, follow [the official installation guide](https://gohugo.io/installation/). For using this theme you **DO NOT NEED** to execute `hugo new site`, as you will be cloning an example site in step 2.
 
@@ -16,11 +16,11 @@ draft: false
 
 4. Move to your site directory and see the website preview with `hugo serve -D`
 
-### How to update ♻
+## How to update ♻
 
 - From the root directory of your website run: `git submodule update --remote --merge`.
 
-### How to customize 🎨
+## How to customize 🎨
 
 - Use your preferred color palette by modifying the Bootstrap variables in `assets/scss/custom-variables.scss`.
 
@@ -32,9 +32,23 @@ draft: false
 
 - Change the images of the website from the `content/<language>/pages/<page>/<image>` folders (pages and posts use [Page bundles](https://gohugo.io/content-management/page-bundles/)).
 
-### How to manage posts ✏️
+- Add your own favicon, background and default meta-image (the image used in SEO) in `assets/img`. These files can be of any extension but must have the same name of the ones currently in the example site assets directory.
 
-The `/content` folder contains different types of content, the content folder structure mimicts the site structure.
+## How to manage posts ✏️
+
+### Enable/Disable Blog
+
+_Wait, you told me this theme was noob friendly, I don't wanna deal with all the blog stuff!_ <br/>
+_I need a simple landing page and all this blog feature is something I don't care about!_
+
+**If you don't need posts you can disable the blog part of the theme entirely from within the config files and just use Magnolia as a simple landing site**
+
+- To disable _tags only_ rendering and indexing for the entire site -> `config.toml` uncomment `#disableKinds = ['taxonomy', 'term']`.
+- To disable _post and tags_ rendering and indexing for the entire site -> `config.toml` uncomment `#disableKinds = ['taxonomy', 'term']` and `#ignoreFiles= ['posts/*']`.
+
+### Content organization
+
+The `/content` folder contains different types of content, the content organization mimicts the site structure.
 
 ```
 content
@@ -55,7 +69,7 @@ content
 For each language, you will find yourself in front of the homepage `_index.md` and the image used for the homepage presentation section (`profile.webp`). The other directories will contain exactly what you expect.
 
 `pages`= normal website pages (office, services etc).
-`posts`= your posts.
+`posts`= site posts.
 `tags` = custom tags.
 
 #### Posts
@@ -88,7 +102,7 @@ content/en/tags
 
 For more on content organization refefer to [Content organization | Hugo](https://gohugo.io/content-management/organization/).
 
-### Add new languages 🚩
+## Add new languages 🚩
 
 1. Head to `config/_default/languages`.
 2. Duplicate one of the language files, change the language tag, name of the file (en, it, fr etc): this should be compliant with [RFC 5646](https://gohugo.io/content-management/multilingual/). Use the [RFC 5646 Language Tags List](https://gist.github.com/msikma/8912e62ed866778ff8cd) for a quicker setup.
@@ -97,11 +111,11 @@ For more on content organization refefer to [Content organization | Hugo](https:
 5. For each of the `.html` file in `/content/pages`, you can change `title` and `slug` freely. `translationKey` should remain untouched or should be changed in every language page file. I strongly suggest you to translate the SEO here as well.
 6. For each of the `.md` files in `content/posts/<my-post>` translate the content and the frontmatter values you need (eg. _summary_).
 
-### Custom 404 page
+## Custom 404 page
 
 To add the custom 404 page and make it work on github pages, you will have to add it manually when building the site executing `hugo`. This is because github pages looks for a 404 template in the root directory of the project, you can therefore only have one single 404 page for all the languages. To create a symlink to the english 404 version, which will then be used as default 404 once hosting, after running `hugo` run `ln -s public/en/404/index.html public/404.html`.
 
-### Remunerate my time and energy 💫
+## Remunerate my time and energy 💫
 
 ![Liberapay receiving](https://img.shields.io/liberapay/receives/ololiuhqui)
 ![GitHub Sponsors](https://img.shields.io/github/sponsors/ololiuhqui)
