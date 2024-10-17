@@ -220,6 +220,8 @@ bc1q26f4gscc5ksujdx6wzxfnlqeqt02p3sjcqwvln
 
 ## Contribute 🛠
 
+**First of all, PRs are welcome here!**
+
 ### Notes on how this repo works
 
 This repo includes two main branches: **main** and **exampleSite**.
@@ -237,6 +239,10 @@ As an alternative you can also clone the **exampleSite** with the `recurse-submo
 
 ### Things that should be probably added to this theme
 
+#### Add a RSS feed template for posts
+
+This would be wonderful for setting up automations that use RSS feed as source like Zapier or FTTT.
+
 #### Add proper Bootstrap theming
 
 Only some bootstrap variables are reassigned, leaving a lot of them to defaults. Properly assigning all the most important variables would make building, modifying and styling the theme much easier with less manual SCSS/CSS needed.
@@ -247,10 +253,6 @@ Refer to:
 
 - [Customize · Bootstrap v5.0](https://getbootstrap.com/docs/5.0/customize/overview/).
 - [Example bootstrap themes + easily style with UI](https://bootstrap.build/app/project/UroRGaxfXxdg)
-
-#### Add different configuration environments
-
-Hugo adds the possibility to use a production environment, specifying some defaults. Despite we make use of the `_default` folder name in the configs, a better implementation, which includes a development and a production environment would yet need to be made. Check [Glossary of terms - Environment | Hugo](https://gohugo.io/getting-started/glossary/#environment) and [Configure Hugo | Hugo](https://gohugo.io/getting-started/configuration/).
 
 ### Ensure accessibility
 
