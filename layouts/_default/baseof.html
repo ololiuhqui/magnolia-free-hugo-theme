@@ -1,8 +1,13 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
-  {{- partial "head.html" . -}}
-  <body class="background-image" style="background-image: url('{{resources.GetMatch "img/background.*"}}')">
-    {{- partial "header.html" . -}}
+  {{- partial "head.html" . -}} 
+  <body
+    class="background-image"
+    {{ with resources.GetMatch "img/background.*" }}
+    style="background-image: url('{{.RelPermalink}}')"
+    {{ end }}
+  >
+     {{- partial "header.html" . -}}
     <div id="content">
       <main class="p-2 p-lg-5 container">{{- block "main" .}} {{- end }}</main>
     </div>

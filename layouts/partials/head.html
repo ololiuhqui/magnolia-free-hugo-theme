@@ -116,11 +116,14 @@
   <link rel="stylesheet" href="{{ $style.RelPermalink }}" media="screen" />
 
   {{/* Favicon */}}
+  {{ with resources.GetMatch "img/favicon.*" }}
   <link
     rel="shortcut icon"
     type="image/x-icon"
-    href="{{resources.GetMatch "img/favicon.*"}}"
+    href="{{.RelPermalink}}"
   />
+  {{end}}
+  
   <!-- Google Analytics -->
   {{ template "_internal/google_analytics.html" . }}
 </head>
