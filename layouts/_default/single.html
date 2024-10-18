@@ -1,80 +1,71 @@
 {{ define "main" }}
-  <div class="container">
-    {{ with .Resources.GetMatch "images/featured*" }}
-      <h1>{{ $.Title }}</h1>
-      <img
-        class="rounded img-fluid shadow post-img mb-3"
-        src="{{ .RelPermalink }}"
-        alt="{{ $.Title }} post featured image"
-      />
-    {{ end }}
+<div class="container">
+  {{ with .Resources.GetMatch "images/featured*" }}
+  <h1>{{ $.Title }}</h1>
+  <img
+    class="rounded img-fluid shadow post-img mb-3"
+    src="{{ .RelPermalink }}"
+    alt="{{ $.Title }} post featured image"
+  />
+  {{ end }}
 
-
-    <div class="row g-2">
-      <div class="col-sm-12 col-md-6">
-        {{ range .GetTerms "tags" }}
-          <a
-            href="{{ .RelPermalink }}"
-            class="btn btn-sm btn-light border-primary"
-            >#{{ .Title }}</a
-          >
-        {{ end }}
-      </div>
-      <div class="col-sm-12 col-md-6 d-flex justify-content-md-end">
-        <small class="text-muted"
-          >{{ .Params.imageAttribution | markdownify }}</small
-        >
-      </div>
-      <div class="row g-2 ">
-        <small class="text-muted col"
-          >{{ .Date | time.Format "2 January , 2006" }}</small
-        >
-      </div>
+  <div class="row g-2">
+    <!-- Tags -->
+    <div class="col-sm-12 col-lg-6 order-2 order-lg-1">
+      {{ range .GetTerms "tags" }}
+      <a
+        href="{{ .RelPermalink }}"
+        class="btn btn-sm btn-light border-primary mb-2"
+        >#{{ .Title }}</a
+      >
+      {{ end }}
     </div>
-    <hr />
-    <div class="row g-3 g-md-5 ">
-      <div class="col order-md-first">
-        {{ with .Content }}{{ . }}{{ end }}
-      </div>
-
-      <div class="order-first order-md-last col-12 col-md-4">
-        {{ if in .TableOfContents "li" }}
-          <div class="border p-3 sticky-top" style="top: 120px;">
-            <p>{{ .Site.Params.single.toc }}</p>
-
-            {{ .TableOfContents }}
-          </div>
-        {{ end }}
-      </div>
+    <!-- Image attrib -->
+    <div
+      class="col-sm-12 col-lg-6 d-flex justify-content-lg-end order-1 order-lg-2"
+    >
+      <small class="text-muted"
+        >{{ .Params.imageAttribution | markdownify }}</small
+      >
     </div>
-
-    <!-- Related posts -->
-    {{ if .GetTerms "tags" }}
-
-      <hr />
-      <h4 class="text-center my-4">{{ .Site.Params.single.similarcontent }}</h4>
-
-      <div class="row g-3 mb-3">
-        {{ $pagesToRender:= slice }}
-        {{ range .GetTerms "tags" }}
-          {{ range first 4
-            .Pages
-          }}
-            {{ $pageToAppend := . }}
-            <!-- check whether the page is already in pagestorender  -->
-            {{ if in $pagesToRender $pageToAppend | not }}
-              {{ if eq $pageToAppend $.Page |
-                not
-              }}
-                {{ $pagesToRender = $pagesToRender | append $pageToAppend }}
-              {{ end }}
-            {{ end }}
-          {{ end }}
-        {{ end }}
-        {{ range $pagesToRender }}
-          {{ partial "post-card" . }}
-        {{ end }}
-      </div>
-    {{ end }}
   </div>
+  <!-- Publish date -->
+  <div class="row g-2">
+    <small class="text-muted col"
+      >{{ .Date | time.Format "2 January , 2006" }}</small
+    >
+  </div>
+  <hr />
+  <!-- Content -->
+  <div class="row g-3 gx-lg-5">
+    <div class="col order-lg-first">{{ with .Content }}{{ . }}{{ end }}</div>
+    <!-- Table Of Contents -->
+    <div class="order-first order-lg-last col-12 col-lg-4">
+      {{ if in .TableOfContents "li" }}
+      <div class="border p-3 sticky-top toc">
+        <p>{{ .Site.Params.single.toc }}</p>
+
+        {{ .TableOfContents }}
+      </div>
+      {{ end }}
+    </div>
+  </div>
+
+  <!-- Related posts -->
+  {{ if .GetTerms "tags" }}
+
+  <hr />
+  <h4 class="text-center my-4">{{ .Site.Params.single.similarcontent }}</h4>
+
+  <div class="row g-3 mb-3">
+    {{ $pagesToRender:= slice }} {{ range .GetTerms "tags" }} {{ range first 4
+    .Pages }} {{ $pageToAppend := . }}
+    <!-- check whether the page is already in pagestorender  -->
+    {{ if in $pagesToRender $pageToAppend | not }} {{ if eq $pageToAppend $.Page
+    | not }} {{ $pagesToRender = $pagesToRender | append $pageToAppend }} {{ end
+    }} {{ end }} {{ end }} {{ end }} {{ range $pagesToRender }} {{ partial
+    "post-card" . }} {{ end }}
+  </div>
+  {{ end }}
+</div>
 {{ end }}
