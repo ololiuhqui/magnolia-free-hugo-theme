@@ -23,11 +23,9 @@
   />
 
   <meta name="dc.relation" content="{{ .Site.BaseURL }}" />
-  {{ if not .Params.Index }}
-    <meta name="robots" content="noindex" />
-  {{ else }}
-    <meta name="robots" content="index,follow" />
-  {{ end }}
+
+  <meta name="robots" content="index,follow" />
+  
 
 
   <!-- Google / Search Engine Tags -->
