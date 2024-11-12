@@ -9,7 +9,11 @@
   >
      {{- partial "header.html" . -}}
     <div id="content">
-      <main class="p-2 p-lg-5 container">{{- block "main" .}} {{- end }}</main>
+      <main class="p-3 p-lg-5 container">
+        <div class="container">
+          {{- block "main" .}} {{- end }}
+        </div>
+        </main>
     </div>
     {{- partial "footer.html" . -}}
   </body>
