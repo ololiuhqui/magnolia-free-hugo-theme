@@ -27,9 +27,9 @@ Qui c'è la [pagina github del tema](https://github.com/ololiuhqui/magnolia-free
 Guardate cosa è in grado di fare questo tema nella pagina delle caratteristiche e vedete un bellissimo esempio di pagina dei contatti qui sotto.
         """
     mainButton = "Caratteristiche"
-    mainButtonRef = "caratteristiche"
+    mainButtonRef = "/caratteristiche"
     secondButton = "Contatti"
-    secondButtonRef = "contatti" 
+    secondButtonRef = "/contatti" 
     
     blogTitle = "Storie interessanti"
     blogButton= "More Stories"
