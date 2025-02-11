@@ -30,7 +30,7 @@
                 {{end}}
                 {{end}}
               </div>
-              <p class="card-text d-none d-lg-block">{{.Summary}}</p>
+              <div class="card-text d-none d-lg-block">{{.Summary | plainify}}</div>
               <div>
                 <p class="card-text"></p>
                 <small class="">{{.ReadingTime}} minutes read</small>
