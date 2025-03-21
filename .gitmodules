@@ -1,4 +1,4 @@
 [submodule "magnolia-free-hugo-theme"]
 	path = themes/Magnolia
-	url = https://github.com/ololiuhqui/magnolia-free-hugo-theme
-	branch = main-feature/add-blog-functionality
+	url = https://github.com/totoroot/magnolia-free-hugo-theme
+	branch = main-feature/enable-blocking-ai-scrapers

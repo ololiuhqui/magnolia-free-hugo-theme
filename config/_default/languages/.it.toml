@@ -1,13 +1,13 @@
 disabled = false
 languageCode = 'it-IT'
 languageName = 'Italiano'
-title = 'Magnolia' 
+title = 'Magnolia'
 copyright = """Designed with [Hugo](https://gohugo.io/) by [Ludovico Caluori](https://github.com/ololiuhqui) 🎨 \n
  Licensed under [MIT license](https://github.com/ololiuhqui/magnolia-free-hugo-theme/blob/main/LICENSE.md) 📄"""
 contentDir="content/it"
 
 [params]
-  subtitle = "Free Hugo theme" 
+  subtitle = "Free Hugo theme"
 
 # PAGES
 
@@ -29,22 +29,22 @@ Guardate cosa è in grado di fare questo tema nella pagina delle caratteristiche
     mainButton = "Caratteristiche"
     mainButtonRef = "/caratteristiche"
     secondButton = "Contatti"
-    secondButtonRef = "/contatti" 
-    
+    secondButtonRef = "/contatti"
+
     blogTitle = "Storie interessanti"
     blogButton= "More Stories"
 
 [params.office]
   title = "Uffici"
  description = "Questa pagina può essere facilmente personalizzata con l'aggiunta di un link a Google Maps per ottenere indicazioni stradali verso il luogo dell'attività."
- buttonText = "Indicazioni" 
- buttonLink = "https://maps.app.goo.gl/LzsPzRkTYSZ8SF3y8" 
+ buttonText = "Indicazioni"
+ buttonLink = "https://maps.app.goo.gl/LzsPzRkTYSZ8SF3y8"
  mapLink = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d382266.44569392945!2d-76.55832397784323!3d41.53770983690751!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c4d93a77484bbb%3A0xfff27920ab9bfae8!2sScranton%2C%20Pennsylvania%2C%20Stati%20Uniti!5e0!3m2!1sit!2sit!4v1716459350324!5m2!1sit!2sit" # google maps "embed" link here
 
 [params.contacts]
   title = "Contattaci!"
   formCallToAction = "Questa è una pagina di esempio \"contattaci\"; è possibile ricevere le risposte dei moduli su FormSpree (gratis)."
-  socialCallToAction = "Puoi aggiungere i tuoi link ai social media qui sotto!" 
+  socialCallToAction = "Puoi aggiungere i tuoi link ai social media qui sotto!"
   [params.contacts.form]
     formspreeLink = "https://yourformspreelink.com"
     firstname = "Nome*"
@@ -82,7 +82,7 @@ Guardate cosa è in grado di fare questo tema nella pagina delle caratteristiche
       description= "La pagina dei contatti può essere facilmente personalizzata con l'aggiunta di un link a Google Maps per ottenere indicazioni stradali verso la sede dell'attività."
 
 [params.socials]
-  enabled = true 
+  enabled = true
   callToAction= "Connettiti con noi sui social media >"
       [[params.socials.link]]
         name = "github"
@@ -95,8 +95,8 @@ Guardate cosa è in grado di fare questo tema nella pagina delle caratteristiche
         link = ""
 
 [params.schedules]
-  enabledFooter = false 
-  enabledContacts = true 
+  enabledFooter = false
+  enabledContacts = true
   title = "Office hours"
   [params.schedules.days]
     day1 = "Lunedì: 9:00 – 19:00"
@@ -111,17 +111,24 @@ Guardate cosa è in grado di fare questo tema nella pagina delle caratteristiche
   extraDescription1 = "Straight outta Scranton city"
   extraDescription2 = "VAT No. 0000000000"
   [params.footer.navigate]
-  heading = "Naviga"   
+  heading = "Naviga"
   [params.footer.contacts]
-  enabled = true 
+  enabled = true
   heading = "Contatti"
   address = "Scranton 2865 Pouros Corners 55441-0788"
   mail = "dundermifflin@fakemail.com"
   mail2 = "dundermifflinorders@fakemail.com"
   phone = "+00 0000000"
-  
+
 [params.notfound]
   title = "404, page not found"
+
+[params.robots]
+  # Block AI crawlers to limit traffic
+  # robots.txt from https://robotstxt.com/ai
+  # Note that enabling this might impact SEO performance, since many search engines now
+  # use LLMs that gather data with these crawlers from across the web
+  blockAIcrawlers = false
 
 [params.single] # for posts pages (visible only if posts are rendered)
   similarContent= "Contenuti Simili"

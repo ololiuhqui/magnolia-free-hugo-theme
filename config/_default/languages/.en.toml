@@ -41,7 +41,7 @@ Look at what this theme is capable to do on the features page, and see a beautif
 [params.office]
   title = "The Office"
  description = "This page can be easily customized by adding a google maps link to get directions towards your activity location."
- buttonText = "Get directions" 
+ buttonText = "Get directions"
  buttonLink = "https://maps.app.goo.gl/LzsPzRkTYSZ8SF3y8" # google maps "share" link here (for button)
  mapLink = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d382266.44569392945!2d-76.55832397784323!3d41.53770983690751!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c4d93a77484bbb%3A0xfff27920ab9bfae8!2sScranton%2C%20Pennsylvania%2C%20Stati%20Uniti!5e0!3m2!1sit!2sit!4v1716459350324!5m2!1sit!2sit" # google maps "embed" link here
 
@@ -120,7 +120,7 @@ Look at what this theme is capable to do on the features page, and see a beautif
   extraDescription1 = "Straight outta Scranton city"
   extraDescription2 = "VAT No. 0000000000"
   [params.footer.navigate]
-  heading = "Navigate"   
+  heading = "Navigate"
   [params.footer.contacts]
   enabled = true # enables/disables the whole contacts section in footer
   heading = "Contact"
@@ -128,9 +128,16 @@ Look at what this theme is capable to do on the features page, and see a beautif
   mail = "dundermifflin@fakemail.com"
   mail2 = "dundermifflinorders@fakemail.com"
   phone = "+00 0000000"
-  
+
 [params.notfound]
   title = "404, page not found" # text for 404 page
+
+[params.robots]
+  # Block AI crawlers to limit traffic
+  # robots.txt from https://robotstxt.com/ai
+  # Note that enabling this might impact SEO performance, since many search engines now
+  # use LLMs that gather data with these crawlers from across the web
+  blockAIcrawlers = false
 
 [params.single] # for posts pages (visible only if posts are rendered)
   similarContent= "Similar Content"
