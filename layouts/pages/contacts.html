@@ -157,11 +157,9 @@
       </div>
     </div>
     {{end}}
-
-    <!-- /.row-->
-
-    <!-- /.row-->
   </div>
+
+  {{ if .Site.Params.socials.enabled }}
   <div class="row justify-content-center">
     <div class="col-lg-8">
       <p class="text-center text-muted mb-4">
@@ -178,5 +176,6 @@
     </div>
     {{ end}}
   </div>
+  {{ end }}
 </div>
 {{ end }}
