@@ -52,7 +52,7 @@ These are the currently customizable sections:
 ### 5. SEO ready
 
 - Every page has an easily customizable meta description and a unique meta title for better and easier indexing. Each post has the option of adding a featured image, and, if not found, `assets/img/meta-image` will be used instead as meta image for Google, Facebook and Twitter. All pages that do not have a featured image will have the `meta-image` by default (eg. homepage, office etc).
-  There is a `robots.txt` file which indicates the correct location of the sitemap index for faster indexing.
+  There is a `robots.txt` file which indicates the correct location of the sitemap index for faster indexing. There's also an option in config to block AI scrapers via robots, this will increase your website **privacy** as well as **digital resiliency**, and also could help avoid altering your analytics.
 
 ### 6. Google Analytics supported
 
