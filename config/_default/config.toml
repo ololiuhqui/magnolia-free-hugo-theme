@@ -7,12 +7,19 @@ enableRobotsTXT = true
 theme = "Magnolia"
 googleAnalytics = ""
 
+# Block AI crawlers to limit traffic
+  # robots.txt from https://robotstxt.com/ai
+  # Note that enabling this might impact SEO performance, since many search engines now
+  # use LLMs that gather data with these crawlers from across the web
+[params.robots]
+  blockAIcrawlers = false
+
 # BLOG
 # Uncomment if you want to disable all posts and tags rendering and indexing
 #ignoreFiles= ['posts/*']
 #disableKinds = ['taxonomy', 'term']
 
-# Developer area
+# Developer area #
 
 [taxonomies]
 tag = "tags"

@@ -123,13 +123,6 @@ Guardate cosa è in grado di fare questo tema nella pagina delle caratteristiche
 [params.notfound]
   title = "404, page not found"
 
-[params.robots]
-  # Block AI crawlers to limit traffic
-  # robots.txt from https://robotstxt.com/ai
-  # Note that enabling this might impact SEO performance, since many search engines now
-  # use LLMs that gather data with these crawlers from across the web
-  blockAIcrawlers = false
-
 [params.single] # for posts pages (visible only if posts are rendered)
   similarContent= "Contenuti Simili"
   toc= "Indice"

@@ -132,13 +132,6 @@ Look at what this theme is capable to do on the features page, and see a beautif
 [params.notfound]
   title = "404, page not found" # text for 404 page
 
-[params.robots]
-  # Block AI crawlers to limit traffic
-  # robots.txt from https://robotstxt.com/ai
-  # Note that enabling this might impact SEO performance, since many search engines now
-  # use LLMs that gather data with these crawlers from across the web
-  blockAIcrawlers = false
-
 [params.single] # for posts pages (visible only if posts are rendered)
   similarContent= "Similar Content"
   toc= "Table of Contents"
