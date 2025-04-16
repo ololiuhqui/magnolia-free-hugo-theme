@@ -8,17 +8,18 @@ draft: false
 
 ## Avvio rapido: come si installa 📥
 
-1. Installate hugo extended, seguendo [la guida ufficiale all'installazione] (https://gohugo.io/installation/). Per l'utilizzo di questo tema non è necessario eseguire `hugo new site`, in quanto si clonerà un sito di esempio nel passaggio 2.
-
-2. Clonate il sito di esempio e il tema dal repo: `git init && git clone -b exampleSite --recurse-submodules https://github.com/ololiuhqui/magnolia-free-hugo-theme <YourSiteName>` (cambiate \<YourSiteName\> nel comando con il nome che volete dare al vostro sito).
-
-3. Cancellare il file `config.toml` predefinito dalla cartella principale del sito; le nuove configurazioni si troveranno in `config/_default`. Il file di configurazione principale è `config/_default/config.toml`, ma la maggior parte delle variabili sono sovrascritte o definite dai file di configurazione delle singole lingue (per esempio, `config/_default/languages/.en.toml`).
-
+1. Installate hugo extended, seguendo [la guida ufficiale all'installazione](https://gohugo.io/installation/). Per l'utilizzo di questo tema non è necessario eseguire `hugo new site`, in quanto si clonerà un sito di esempio nel passaggio 2.
+2. Ottenere [l'ultima versione del sito di esempio](https://github.com/ololiuhqui/magnolia-free-hugo-theme/releases/latest). Scaricate l'archivio denominato sito di esempio, che verrà automaticamente fornito con una versione compatibile del tema magnolia.
+3. Le configurazioni del sito si trovano in `config/_default`. Il file di configurazione principale è `config/_default/config.toml`, ma la maggior parte delle variabili sono sovrascritte o definite dai file di configurazione delle singole lingue (ad esempio, `config/_default/languages/.en.toml`).
 4. Spostarsi nella directory del sito e vedere l'anteprima del sito con `hugo serve -D`.
 
 ## Come aggiornare ♻
 
-- Dalla directory principale del vostro sito web eseguite: `git submodule update --remote --merge`.
+- Spostarsi nella cartella del tema `cd themes/Magnolia
+- Eseguire `git checkout <version-tag>`. Scegliere il tag della versione dalla [pagina dei rilasci](https://github.com/ololiuhqui/magnolia-free-hugo-theme/releases). Ad esempio `git checkout v2.0.0`.
+  Controllare la pagina dei rilasci per assicurarsi che la nuova versione del tema sia compatibile con l'attuale versione del sito di esempio. Fare riferimento a [Semantic Versioning 2.0.0 | Semantic Versioning](https://semver.org/).
+
+Tradotto con DeepL.com (versione gratuita)
 
 ## Come personalizzare 🎨
 
