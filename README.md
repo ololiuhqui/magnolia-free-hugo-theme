@@ -86,7 +86,7 @@ These are the currently customizable sections:
 
 - Change the config files in `/config/_default` and `/config/_default/languages` adding your own elements to the pages. You can change the page names there as well.
 
-- Edit the homepage content in `content/<language>/pages/_index.html`, markdown supported.
+- Edit the homepage content in `content/<language>/_index.html`, markdown supported.
 
 - Edit pages names, slugs and metadescriptions in `content/<language>/pages/<page>/index.html`.
 
@@ -225,6 +225,8 @@ bc1q26f4gscc5ksujdx6wzxfnlqeqt02p3sjcqwvln
 ### Notes on how this repo works
 
 This repo includes two main branches: **main** and **exampleSite**.
+
+**main** is an **exampleSite** submodule.
 
 The _exampleSite_ directory will _not_ be shown in **main** branch.
 If you clone the **main** branch you will therefore be able to modify the theme and its content only, if you clone the **exampleSite** branch you will be able to modify the exampleSite content only.
