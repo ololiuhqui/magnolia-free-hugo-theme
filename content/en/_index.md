@@ -26,7 +26,7 @@ draft: false
 
 - Change the config files in `/config/_default` and `/config/_default/languages` adding your own elements to the pages. You can change the page names there as well.
 
-- Edit the homepage content in `content/<language>/pages/_index.html`, markdown supported.
+- Edit the homepage content in `content/<language>/_index.html`, markdown supported.
 
 - Edit pages names, slugs and metadescriptions in `content/<language>/pages/<page>/index.html`.
 

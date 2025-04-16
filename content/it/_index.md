@@ -26,7 +26,7 @@ draft: false
 
 - Modificare i file di configurazione in `/config/_default` e `/config/_default/languages` aggiungendo i propri elementi alle pagine. È possibile cambiare anche i nomi delle pagine.
 
-- Modificare il contenuto della homepage in `content/<language>/pages/_index.html`, con il supporto di markdown.
+- Modificare il contenuto della homepage in `content/<language>/_index.html`, con il supporto di markdown.
 
 - Modificare i nomi delle pagine, gli slug e le metadescrizioni in `content/<language>/pages/<page>/index.html`.
 
