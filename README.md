@@ -70,15 +70,19 @@ These are the currently customizable sections:
 
 1. Install hugo extended, follow [the official installation guide](https://gohugo.io/installation/). For using this theme you **DO NOT NEED** to execute `hugo new site`, as you will be cloning an example site in step 2.
 
-2. Clone the exampleSite and the theme from the repo:`git init && git clone -b exampleSite --recurse-submodules https://github.com/ololiuhqui/magnolia-free-hugo-theme <YourSiteName>` (change \<YourSiteName\> in the command with the name you wanna give to your site).
+2. Get [the latest version of the example site](https://github.com/ololiuhqui/magnolia-free-hugo-theme/releases/latest). Download the archive named example-site, it will automatically come with a compatible version of the magnolia theme.
 
-3. Delete your default `config.toml` from the root folder of your site; the new configurations will be found in `config/_default`. The main configuration file is `config/_default/config.toml`, but most variables are overwritten or defined by the individual language configuration files (eg. `config/_default/languages/.en.toml`)
+3. The site configurations will be found in `config/_default`. The main configuration file is `config/_default/config.toml`, but most variables are overwritten or defined by the individual language configuration files (eg. `config/_default/languages/.en.toml`)
 
 4. Move to your site directory and see the website preview with `hugo serve -D`
 
 ## How to update ♻
 
-- From the root directory of your website run: `git submodule update --remote --merge`.
+- Move into the theme folder `cd themes/Magnolia`
+
+- Run `git checkout <version-tag>`. Choose the version tag from the [releases page](https://github.com/ololiuhqui/magnolia-free-hugo-theme/releases). e.g `git checkout v2.0.0`.
+
+Please check the releases page to make sure the new version of the theme is compatible with your current example-site release. Refer to [Semantic Versioning 2.0.0 | Semantic Versioning](https://semver.org/).
 
 ## How to customize 🎨
 
@@ -230,7 +234,9 @@ This repo includes two main branches: **main** and **exampleSite**.
 
 The _exampleSite_ directory will _not_ be shown in **main** branch.
 If you clone the **main** branch you will therefore be able to modify the theme and its content only, if you clone the **exampleSite** branch you will be able to modify the exampleSite content only.
-As an alternative you can also clone the **exampleSite** with the `recurse-submodules` option, that will also add the theme **main** as submodule, making it available for changes.
+As an alternative you can also clone the **exampleSite** with the `recurse-submodules` option, that will also add the theme **main** as submodule, making it available for changes. To clone the repo and submodule at latest commit and main branch run `git clone -b exampleSite --recurse-submodules https://github.com/ololiuhqui/magnolia-free-hugo-theme`, move to the just cloned folder and `git submodule update --remote --merge` to make sure you're working with the latest theme commit.
+
+This will set you up to work on a detatched HEAD with the latest commit on the theme and example site, checkout to your own branches and make pull requests!
 
 #### Content:
 
