@@ -17,7 +17,9 @@
     </div>
 
     <div class="col-md-6 my-3 gallery">
-      <img class="rounded shadow" src="./office.webp" alt="" />
+      {{ with .Resources.GetMatch "office*" }}
+      <img class="rounded shadow" src="{{.RelPermalink}}" alt="" />
+      {{end}}
     </div>
     <div class="col-12 my-3 d-none d-md-block">
       <anchor></anchor>

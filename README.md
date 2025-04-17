@@ -94,7 +94,7 @@ Please check the releases page to make sure the new version of the theme is comp
 
 - Edit pages names, slugs and metadescriptions in `content/<language>/pages/<page>/index.html`.
 
-- Change the images of the website from the `content/<language>/pages/<page>/<image>` folders (pages and posts use [Page bundles](https://gohugo.io/content-management/page-bundles/)).
+- Change the images of the website from the `content/<language>/pages/<page>/<image>` folders (pages and posts use [Page bundles](https://gohugo.io/content-management/page-bundles/)). The homepage is the `_index.md` right in the root language content folder. Images of any extensions can be used, but the name of the image must be the same of the one currently set up (eg. `main.*`).
 
 - Add your own favicon, background and default meta-image (the image used in SEO) in `assets/img`. These files can be of any extension but must have the same name of the ones currently in the example site assets directory.
 
