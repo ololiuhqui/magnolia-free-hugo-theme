@@ -4,9 +4,7 @@ description: 'A free hugo theme'
 draft: false
 ---
 
-<h1 style="text-align: center;">How to use this theme</h1>
-
-### Follow the docs in the [theme github page](https://github.com/ololiuhqui/magnolia-free-hugo-theme).
+### Follow the docs on how to use this theme on the [theme github page](https://github.com/ololiuhqui/magnolia-free-hugo-theme).
 
 ---
 

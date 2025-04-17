@@ -4,7 +4,9 @@ description: 'Un tema Hugo gratuito'
 draft: false
 ---
 
-### La documentazione è disponibile alla [pagina github del tema](https://github.com/ololiuhqui/magnolia-free-hugo-theme).
+### La documentazione su come utilizzare questo tema è disponibile alla [pagina github](https://github.com/ololiuhqui/magnolia-free-hugo-theme).
+
+---
 
 ### Remunera il mio tempo e le mie energie 💫
 
