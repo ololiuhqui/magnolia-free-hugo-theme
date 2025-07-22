@@ -121,17 +121,17 @@ content
 │   ├── _index.md
 │   ├── pages
 │   ├── posts
-│   ├── profile.webp
+│   ├── main.webp
 │   └── tags
 └── it
     ├── _index.md
     ├── pages
     ├── posts
-    ├── profile.webp
+    ├── main.webp
     └── tags
 ```
 
-For each language, you will find yourself in front of the homepage `_index.md` and the image used for the homepage presentation section (`profile.webp`). The other directories will contain exactly what you expect.
+For each language, you will find yourself in front of the homepage `_index.md` and the image used for the homepage presentation section (`main.webp`). The other directories will contain exactly what you expect.
 
 `pages`= normal website pages (office, services etc).
 `posts`= site posts.
