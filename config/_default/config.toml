@@ -1,5 +1,5 @@
 baseURL = 'https://example.com'
-languageCode = ''
+locale = ''
 title = 'Magnolia Default' # This can get overwritten by the single language files
 defaultContentLanguage = 'en'
 # defaultContentLanguageInSubDir = true
@@ -43,3 +43,7 @@ tag = "tags"
   [markup.goldmark]
     [markup.goldmark.renderer]
       unsafe = true
+
+# Give explicit consent to load html files
+[security]
+  allowContent = ['^text/html$', '^text/markdown$']
