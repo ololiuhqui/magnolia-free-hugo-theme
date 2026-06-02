@@ -1,0 +1,159 @@
+disabled = false
+locale = 'fr-fr'
+label = 'Français'
+title = 'Cassy Vitrail' # This will go in the Header as well
+copyright = """© 2026 — Atelier Cassy Vitrail. Tous droits réservés. \n
+ Développé with [Hugo](https://gohugo.io/) by [Ludovico Caluori](https://github.com/ololiuhqui) 🎨 \n
+ Licensed under [MIT license](https://github.com/ololiuhqui/magnolia-free-hugo-theme/blob/main/LICENSE.md) 📄""" # Please leave this here to give me and the tools i used some credit for the work, or BuyMeACoffee and change or remove the copyrightlink below :)
+contentDir = "content/fr"
+
+
+# Change single params to "false" to remove from rendering
+[params]
+  subtitle = "Artisanat d'Art & Maître Vitrailliste" # This goes in the header and in the site title
+  # PAGES
+  [params.homepage]
+    # Notice that SEO meta tags (what appears in google search results) can be set
+    # in individual pages frontmatters `/content/<page>`
+    ###
+    preTitle = "Atelier de Vitraux d'Art"
+    title = "L'art du verre et de la lumière"
+    # You can use some markdown safely here as long as you don't include line breaks
+    intro= """
+### "Dompter la lumière pour révéler la matière et sublimer vos espaces."
+___
+
+**Bienvenue dans l'univers de Cassandra, artisane vitrailliste passionnée.***
+
+I built this theme with simplicity in mind, it is small and easily **customizable, responsive, modular and multilingual**. But it also leaves some space to further in-depth customization since it uses **Bootstrap** and **SCSS**.
+
+Découvrez son savoir-faire ou contactez l'atelier dès aujourd'hui pour une étude gratuite de votre projet !
+
+Look at what this theme is capable to do on the features page, and see a beautiful contacts page example below.
+        """
+    mainButton = "Features"
+    mainButtonRef = "features" # Just write the name or slug of the page here
+    secondButton = "Contacts"
+    secondButtonRef = "contacts" # Just write the name or slug of the page here
+  # For the blog feed section (visible only if posts are rendered)
+    blogTitle = "Actualités de l'Atelier"
+    blogButton= "More Stories"
+
+[params.office]
+  title = "The Office"
+ description = "This page can be easily customized by adding a google maps link to get directions towards your activity location."
+ buttonText = "Get directions"
+ buttonLink = "https://maps.app.goo.gl/LzsPzRkTYSZ8SF3y8" # google maps "share" link here (for button)
+ mapLink = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d382266.44569392945!2d-76.55832397784323!3d41.53770983690751!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c4d93a77484bbb%3A0xfff27920ab9bfae8!2sScranton%2C%20Pennsylvania%2C%20Stati%20Uniti!5e0!3m2!1sit!2sit!4v1716459350324!5m2!1sit!2sit" # google maps "embed" link here
+
+[params.contacts]
+  title = "Donnons vie à vos idées"
+  formCallToAction = "Une question, ou un projet de vitrail décoratif ? Écrivez-moi."
+  socialCallToAction = "Suivez l'actualité de l'atelier sur les réseaux" # These are the same as in [params.social]
+  [params.contacts.form]
+    formspreeLink = "https://yourformspreelink.com" #subscribe to formspree and add the link for the form here
+    firstname = "Prénom*"
+    lastname = "Nom*"
+    email = "Adresse E-mail*"
+    phone = "Numéro de Téléphone*"
+    Inquiry = "Votre projet (Dimensions, style...)*"
+    checkbox = "J'accepte que mes données soient traitées pour répondre à ma demande*"
+    submitBtn = "Soumettre"
+[params.services]
+  title = "Savoir-faire & Prestations"
+  description = """ De la technique traditionnelle au plomb aux créations modernes, découvrez les services proposés par l'atelier."""
+  [params.services.list]
+    # You can add as much params.services.list.<N> as you like
+    [params.services.list.0]
+      title= "Création sur-mesure"
+      description= "The theme is fully responsive and shows perfectly on every screen size."
+    [params.services.list.01]
+      title = "Design Contemporain"
+      description= "Hide and show some elements easily from the config file."
+    [params.services.list.02]
+      title = "Multilingual"
+      description= "The default content language is english (it can be changed), but you can add as many languages as you want very easily, the theme includes an italian language example and a dropdown menù for easily switching between languages. Permalinks can be localized in each language (eg. you can have `/contacts` for english and `/contatti` for italian)."
+    [params.services.list.03]
+      title = "Customizable"
+      description= "The page content can be customized from within the config files."
+    [params.services.list.04]
+      title = "SEO ready"
+      description= "Every page in /content has an easily customizable meta description and a unique meta title for better and easier indexing. The theme will use the image `static/img/meta-image` as meta image for Google, Meta and X."
+    [params.services.list.05]
+      title = "Google Analytics supported"
+      description= "Insert your Google Analytics tag in the `config.toml` file and be ready to track your site performances easily."
+    [params.services.list.06]
+      title = "Google Maps Included"
+      description= "The contact page can be easily customized by adding a google maps link to get directions towards your activity location."
+
+[params.socials]
+  enabled = true # enables/disables the whole social section in the footer
+  callToAction= "Get connected with us on social networks >"
+      [[params.socials.link]]
+        name = "vinted"
+        link = "https://www.vinted.fr/member/3127755203-cassyvitrail"
+      [[params.socials.link]]
+        name = "instagram"
+        link = ""
+      [[params.socials.link]]
+        name = "facebook"
+        link = ""
+      [[params.socials.link]]
+        name = "whatsapp"
+        link = ""
+      # You can add other socials here by copypasting the above section and
+      # selecting the right name for the icon from here https://icons.getbootstrap.com/
+
+[params.schedules] # Time schedules (eg. your office openming hours)
+  enabledFooter = false # This will add the schedules on the footer too
+  enabledContacts = true # This will add the schedule to the contact page
+  title = "Office hours" # For contacts page only
+  [params.schedules.days]
+  # Use something like "Monday: 9-13" for each day
+  # if left empty it is disabled (default)
+    day1 = "Monday: 9am – 7pm"
+    day2 = "Tuesday: 9am – 7pm"
+    day3 = "Wednesday: 9am – 7pm"
+    day4 = "Thursday: 9am – 7pm"
+    day5 = "Friday: 9am – 7pm"
+    day6 = ""
+    day7 = ""
+
+[params.footer]
+  extraDescription1 = "Straight outta Scranton city"
+  extraDescription2 = "VAT No. 0000000000"
+  [params.footer.navigate]
+  heading = "Navigate"
+  [params.footer.contacts]
+  enabled = true # enables/disables the whole contacts section in footer
+  heading = "Contact"
+  address = "Scranton 2865 Pouros Corners 55441-0788"
+  mail = "dundermifflin@fakemail.com"
+  mail2 = "dundermifflinorders@fakemail.com"
+  phone = "+00 0000000"
+
+[params.notfound]
+  title = "Erreur 404 - Page introuvable" # text for 404 page
+
+[params.single] # for posts pages (visible only if posts are rendered)
+  similarContent= "Similar Content"
+  toc= "Table of Contents"
+
+[menus]
+# PageRef should refer to the "translationKey" in `/content/<page>` frontmatter, names can be changed freely
+  [[menus.main]]
+  name = "Accueil"
+  pageRef = "/"
+  weight = 1
+  [[menus.main]]
+  name = "Prestations"
+  pageRef = "pages/services"
+  weight = 2
+  [[menus.main]]
+  name = "L'Atelier"
+  pageRef = "pages/office"
+  weight = 3
+  [[menus.main]]
+  name = "Contact"
+  pageRef = "pages/contacts"
+  weight = 4

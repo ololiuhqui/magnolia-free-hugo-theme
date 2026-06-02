@@ -1,4 +1,4 @@
-disabled = false
+disabled = true
 locale = 'it-IT'
 label = 'Italiano'
 title = 'Magnolia'
