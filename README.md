@@ -4,7 +4,7 @@
 <div align="center>
 
 [![GitHub Actions Workflow Status](https://img.shields.io/github/actions/workflow/status/ololiuhqui/magnolia-free-hugo-theme/hugo.yaml?logo=hugo)](https://github.com/ololiuhqui/magnolia-free-hugo-theme/actions/workflows/hugo.yaml)
-[![Minimum Hugo Version](https://img.shields.io/static/v1?label=min-HUGO-version&message=>=v0.129.0&color=blue&logo=hugo)](https://github.com/gohugoio/hugo/releases/tag/v0.129.0)
+[![Minimum Hugo Version](https://img.shields.io/static/v1?label=min-HUGO-version&message=>=v0.158.0&color=blue&logo=hugo)](https://github.com/gohugoio/hugo/releases/tag/v0.158.0)
 ![GitHub Repo stars](https://img.shields.io/github/stars/ololiuhqui/magnolia-free-hugo-theme)
 
 </div>
