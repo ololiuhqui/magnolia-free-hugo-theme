@@ -1,6 +1,6 @@
 disabled = false
-languageCode = 'it-IT'
-languageName = 'Italiano'
+locale = 'it-IT'
+label = 'Italiano'
 title = 'Magnolia'
 copyright = """Designed with [Hugo](https://gohugo.io/) by [Ludovico Caluori](https://github.com/ololiuhqui) 🎨 \n
  Licensed under [MIT license](https://github.com/ololiuhqui/magnolia-free-hugo-theme/blob/main/LICENSE.md) 📄"""

@@ -1,5 +1,5 @@
 baseURL = 'https://example.com'
-languageCode = ''
+locale = ''
 title = 'Magnolia Default' # This can get overwritten by the single language files
 defaultContentLanguage = 'en'
 # defaultContentLanguageInSubDir = true
@@ -30,7 +30,7 @@ disableKinds = ['taxonomy', 'term']
   # Prints warning if hugo version is too old
   [module.hugoVersion]
     extended = false
-    min = '0.129.0'
+    min = '0.158.0'
 
 
   
