@@ -1,0 +1,5 @@
+{{ $languages := slice }}
+{{ range hugo.Sites }}
+  {{ $languages = $languages | collections.Append . }}
+{{ end }}
+{{ return (collections.Uniq $languages) }}
