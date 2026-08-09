@@ -45,7 +45,7 @@
               aria-expanded="false"
             >
               <i class="bi bi-globe me-1"></i>
-              {{.Site.Language.LanguageName}}
+              {{ .Site.Language.Label}}
               <!-- <i class="bi bi-caret-down-fill ms-1"></i> -->
             </a>
 
@@ -55,7 +55,7 @@
               {{ range .Translations }}
               
               <a class="dropdown-item nav-item nav-link nav-trad text-center" href="{{.Permalink}}">
-                {{.Site.Language.LanguageName}}
+                {{ .Site.Language.Label}}
               </a>
               {{end}}
               {{end}}

@@ -1,8 +1,8 @@
 User-agent: *
-{{ range .Site.Languages }}
-Disallow: /{{ . }}/404
-{{end}}
-Sitemap: {{$.Site.BaseURL}}/sitemap.xml
+{{ range partialCached "get-languages.html" .}}
+Disallow: /{{ .Language.Name }}/404
+{{ end }}
+Sitemap: {{ $.Site.BaseURL }}/sitemap.xml
 
 # Block all known AI crawlers and assistants
 # from using content for training AI models.
