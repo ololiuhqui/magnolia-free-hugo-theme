@@ -1,5 +1,5 @@
 baseURL = 'https://example.com'
-languageCode = ''
+locale = ''
 title = 'Magnolia Default' # This can get overwritten by the single language files
 defaultContentLanguage = 'en'
 # defaultContentLanguageInSubDir = true

@@ -1,6 +1,6 @@
 disabled = false
-languageCode = 'en-US'
-languageName = 'English'
+locale = 'en-US'
+label = 'English'
 title = 'Magnolia' # This will go in the Header as well
 copyright = """Designed with [Hugo](https://gohugo.io/) by [Ludovico Caluori](https://github.com/ololiuhqui) 🎨 \n
  Licensed under [MIT license](https://github.com/ololiuhqui/magnolia-free-hugo-theme/blob/main/LICENSE.md) 📄""" # Please leave this here to give me and the tools i used some credit for the work, or BuyMeACoffee and change or remove the copyrightlink below :)
