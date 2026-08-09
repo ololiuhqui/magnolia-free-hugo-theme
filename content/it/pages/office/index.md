@@ -1,7 +1,7 @@
 ---
 title: 'Ufficio'
 url: '/ufficio'
-description: "Una pagina di esempio che mostra un\'attività e le indicazioni stradali per raggiungerla"
+description: "Una pagina di esempio che mostra un'attività e le indicazioni stradali per raggiungerla"
 translationKey: office
 draft: false
 type: 'pages'
